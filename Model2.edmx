@@ -1,0 +1,2617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbCommercial.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dbCommercialStoreContainer">
+          <EntitySet Name="tbAgingSummary" EntityType="dbCommercial.Store.tbAgingSummary" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBAMCases" EntityType="dbCommercial.Store.tbBAMCases" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBAMEntries" EntityType="dbCommercial.Store.tbBAMEntries" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBAMLookup" EntityType="dbCommercial.Store.tbBAMLookup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBankCodes" EntityType="dbCommercial.Store.tbBankCodes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBankCollections" EntityType="dbCommercial.Store.tbBankCollections" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBilling" EntityType="dbCommercial.Store.tbBilling" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillingCollection" EntityType="dbCommercial.Store.tbBillingCollection" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillingDelete" EntityType="dbCommercial.Store.tbBillingDelete" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillingDetails" EntityType="dbCommercial.Store.tbBillingDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillingSchedule" EntityType="dbCommercial.Store.tbBillingSchedule" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillingSummary" EntityType="dbCommercial.Store.tbBillingSummary" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillPrinted" EntityType="dbCommercial.Store.tbBillPrinted" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbBillProcessing" EntityType="dbCommercial.Store.tbBillProcessing" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbDailyARCustomer" EntityType="dbCommercial.Store.tbDailyARCustomer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbDailySummary" EntityType="dbCommercial.Store.tbDailySummary" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbDeptDivisionHeads" EntityType="dbCommercial.Store.tbDeptDivisionHeads" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbDiscoEntry" EntityType="dbCommercial.Store.tbDiscoEntry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbDMAList" EntityType="dbCommercial.Store.tbDMAList" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbDownloadAgentsHistory" EntityType="dbCommercial.Store.tbDownloadAgentsHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbLedger" EntityType="dbCommercial.Store.tbLedger" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMaintenanceOrder" EntityType="dbCommercial.Store.tbMaintenanceOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMaster" EntityType="dbCommercial.Store.tbMaster" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMasterAccts" EntityType="dbCommercial.Store.tbMasterAccts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMasterAging" EntityType="dbCommercial.Store.tbMasterAging" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMeterReader" EntityType="dbCommercial.Store.tbMeterReader" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMeters" EntityType="dbCommercial.Store.tbMeters" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMrsDownload" EntityType="dbCommercial.Store.tbMrsDownload" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMRSDownloadHistory" EntityType="dbCommercial.Store.tbMRSDownloadHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMrsUpload" EntityType="dbCommercial.Store.tbMrsUpload" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMrsUploadEdit" EntityType="dbCommercial.Store.tbMrsUploadEdit" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbMRSUploadHistory" EntityType="dbCommercial.Store.tbMRSUploadHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbPay" EntityType="dbCommercial.Store.tbPay" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbPaySDR" EntityType="dbCommercial.Store.tbPaySDR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbPenaltyHistory" EntityType="dbCommercial.Store.tbPenaltyHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbPrepareAcctHistory" EntityType="dbCommercial.Store.tbPrepareAcctHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbPrintTemp" EntityType="dbCommercial.Store.tbPrintTemp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbRates" EntityType="dbCommercial.Store.tbRates" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbRecapSales" EntityType="dbCommercial.Store.tbRecapSales" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbSDRLookup" EntityType="dbCommercial.Store.tbSDRLookup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbSeniorHistory" EntityType="dbCommercial.Store.tbSeniorHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbSeriesNo" EntityType="dbCommercial.Store.tbSeriesNo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbServiceRequest" EntityType="dbCommercial.Store.tbServiceRequest" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbServiceRequestCodes" EntityType="dbCommercial.Store.tbServiceRequestCodes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbSettings" EntityType="dbCommercial.Store.tbSettings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbUsers" EntityType="dbCommercial.Store.tbUsers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbZone" EntityType="dbCommercial.Store.tbZone" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbZoneLookup" EntityType="dbCommercial.Store.tbZoneLookup" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="tbAgingSummary">
+          <Key>
+            <PropertyRef Name="summary_id" />
+          </Key>
+          <Property Name="summary_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="status" Type="varchar" MaxLength="8" />
+          <Property Name="billmonth" Type="varchar" MaxLength="8" />
+          <Property Name="ctgry" Type="int" />
+          <Property Name="total_con" Type="int" />
+          <Property Name="balance" Type="decimal" Scale="2" />
+          <Property Name="days0" Type="decimal" Scale="2" />
+          <Property Name="days1to60" Type="decimal" Scale="2" />
+          <Property Name="days61to180" Type="decimal" Scale="2" />
+          <Property Name="days181to365" Type="decimal" Scale="2" />
+          <Property Name="over365" Type="decimal" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbBAMCases">
+          <Key>
+            <PropertyRef Name="bcase_id" />
+          </Key>
+          <Property Name="bcase_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="case_desc" Type="varchar" MaxLength="50" />
+          <Property Name="case_type" Type="varchar" MaxLength="7" />
+        </EntityType>
+        <EntityType Name="tbBAMEntries">
+          <Key>
+            <PropertyRef Name="bamdetail_id" />
+          </Key>
+          <Property Name="bamdetail_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="bamcase_id" Type="int" />
+          <Property Name="bamno" Type="int" />
+          <Property Name="bam_date" Type="datetime" />
+          <Property Name="acctname" Type="varchar" MaxLength="50" />
+          <Property Name="acctno" Type="varchar" MaxLength="6" />
+          <Property Name="zoneno" Type="varchar" MaxLength="4" />
+          <Property Name="cardno" Type="varchar" MaxLength="6" />
+          <Property Name="explanation" Type="nvarchar" MaxLength="254" />
+          <Property Name="acct_title" Type="nvarchar" MaxLength="12" />
+          <Property Name="bam_type" Type="varchar" MaxLength="4" />
+          <Property Name="debit" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="credit" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="billmonth" Type="varchar" MaxLength="7" />
+          <Property Name="cum_as_billed" Type="int" />
+          <Property Name="cum_should_be" Type="int" />
+          <Property Name="cum_adjustment" Type="int" />
+          <Property Name="amt_as_billed" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="amt_should_be" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="amt_adjustment" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="prepared_by_id" Type="int" />
+          <Property Name="approved_by_id" Type="int" />
+          <Property Name="last_reading" Type="int" />
+        </EntityType>
+        <EntityType Name="tbBAMLookup">
+          <Key>
+            <PropertyRef Name="bam_id" />
+          </Key>
+          <Property Name="bam_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="bam_desc" Type="varchar" MaxLength="50" />
+          <Property Name="bam_type" Type="varchar" MaxLength="8" />
+          <Property Name="bam_code" Type="varchar" MaxLength="8" />
+        </EntityType>
+        <EntityType Name="tbBankCodes">
+          <Key>
+            <PropertyRef Name="bank_id" />
+          </Key>
+          <Property Name="bank_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="bank_code" Type="varchar" MaxLength="5" />
+          <Property Name="bank_name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbBankCollections">
+          <Key>
+            <PropertyRef Name="collect_id" />
+          </Key>
+          <Property Name="collect_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="refnum" Type="varchar" MaxLength="10" />
+          <Property Name="zone" Type="varchar" MaxLength="5" />
+          <Property Name="current" Type="decimal" Scale="2" />
+          <Property Name="arrears" Type="decimal" Scale="2" />
+          <Property Name="others" Type="decimal" Scale="2" />
+          <Property Name="senior" Type="decimal" Scale="2" />
+          <Property Name="date_posted" Type="datetime" />
+          <Property Name="date_collected" Type="datetime" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="posted_by" Type="varchar" MaxLength="30" />
+          <Property Name="collect_agent" Type="varchar" MaxLength="10" />
+          <Property Name="totalamt" Type="decimal" Scale="2" />
+          <Property Name="billmonth" Type="varchar" MaxLength="8" />
+          <Property Name="mtr_mtn" Type="decimal" Scale="2" />
+          <Property Name="dmg_mtr" Type="decimal" Scale="2" />
+          <Property Name="updated" Type="varchar" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="tbBilling">
+          <Key>
+            <PropertyRef Name="billing_id" />
+          </Key>
+          <Property Name="billing_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="billing_desc" Type="varchar" MaxLength="30" />
+          <Property Name="billing_start" Type="datetime" />
+          <Property Name="billing_end" Type="datetime" />
+          <Property Name="num_of_bills_processed" Type="int" />
+          <Property Name="num_of_bills_arrears" Type="int" />
+          <Property Name="total_bill_amount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="total_arrears_amount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="total_days" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="loaded_to_zones" Type="bit" />
+          <Property Name="remarks" Type="varchar" MaxLength="150" />
+          <Property Name="processed_date" Type="datetime" />
+          <Property Name="processed_by" Type="smallint" />
+          <Property Name="print_counter" Type="smallint" />
+          <Property Name="last_printdate" Type="datetime" />
+          <Property Name="last_printby" Type="smallint" />
+          <Property Name="checked_date" Type="datetime" />
+          <Property Name="checked_by" Type="smallint" />
+          <Property Name="posted_date" Type="datetime" />
+          <Property Name="posted_by" Type="smallint" />
+          <Property Name="bill_month" Type="varchar" MaxLength="8" />
+        </EntityType>
+        <EntityType Name="tbBillingCollection">
+          <Key>
+            <PropertyRef Name="billcol_id" />
+          </Key>
+          <Property Name="billcol_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="date_trans" Type="datetime" />
+          <Property Name="zone" Type="int" />
+          <Property Name="bill_amount" Type="decimal" Scale="2" />
+          <Property Name="bill_penalty" Type="decimal" Scale="2" />
+          <Property Name="bill_mtrmtn" Type="decimal" Scale="2" />
+          <Property Name="bill_cum" Type="int" />
+          <Property Name="bill_scno" Type="int" />
+          <Property Name="bam_amount" Type="decimal" Scale="2" />
+          <Property Name="bam_cum" Type="int" />
+          <Property Name="bam_scno" Type="int" />
+          <Property Name="col_amount" Type="decimal" Scale="2" />
+          <Property Name="col_penalty" Type="decimal" Scale="2" />
+          <Property Name="col_mtrmtn" Type="decimal" Scale="2" />
+          <Property Name="col_scno" Type="int" />
+          <Property Name="date_generated" Type="datetime" />
+          <Property Name="generated_by" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="tbBillingDelete">
+          <Key>
+            <PropertyRef Name="billdelete_id" />
+          </Key>
+          <Property Name="billdelete_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="billproc_id" Type="int" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="remarks" Type="varchar" MaxLength="250" />
+          <Property Name="date_deleted" Type="datetime" />
+          <Property Name="rdg_prev" Type="int" />
+          <Property Name="rdg_pres" Type="int" />
+          <Property Name="volume" Type="int" />
+          <Property Name="deleted_by" Type="int" />
+        </EntityType>
+        <EntityType Name="tbBillingDetails">
+          <Key>
+            <PropertyRef Name="billingdetails_id" />
+            <PropertyRef Name="master_id" />
+            <PropertyRef Name="billproc_id" />
+          </Key>
+          <Property Name="billingdetails_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="mrs_ref" Type="varchar" MaxLength="12" />
+          <Property Name="ave_vol" Type="int" />
+          <Property Name="current" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="date_pres" Type="datetime" />
+          <Property Name="date_prev" Type="datetime" />
+          <Property Name="volume" Type="int" />
+          <Property Name="penalty" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="mtr_mtn" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="rdg_pres" Type="int" />
+          <Property Name="rdg_prev" Type="int" />
+          <Property Name="master_id" Type="int" Nullable="false" />
+          <Property Name="billproc_id" Type="int" Nullable="false" />
+          <Property Name="readtime" Type="varchar" MaxLength="20" />
+          <Property Name="arrears" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="remarks" Type="varchar" MaxLength="150" />
+          <Property Name="sr_id" Type="int" />
+          <Property Name="senior" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="inst_fee" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="mtr_dmg" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="bill_ref_num" Type="varchar" MaxLength="10" />
+          <Property Name="mtr_read_by" Type="int" />
+          <Property Name="read_edit_by" Type="int" />
+          <Property Name="other_fees" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="other_fee_code" Type="varchar" MaxLength="15" />
+          <Property Name="arrears_month" Type="smallint" />
+        </EntityType>
+        <EntityType Name="tbBillingSchedule">
+          <Key>
+            <PropertyRef Name="billing_sched_id" />
+          </Key>
+          <Property Name="billing_sched_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="date_rdg" Type="datetime" />
+          <Property Name="date_bill_start" Type="datetime" />
+          <Property Name="date_bill_end" Type="datetime" />
+          <Property Name="date_processed" Type="datetime" />
+          <Property Name="date_bill_serve" Type="datetime" />
+          <Property Name="date_due_disco_arrears" Type="datetime" />
+          <Property Name="date_due_disco_noarrears" Type="datetime" />
+          <Property Name="date_due_office" Type="datetime" />
+          <Property Name="date_due_bank" Type="datetime" />
+          <Property Name="date_gen_penalty" Type="datetime" />
+          <Property Name="date_download_agents" Type="datetime" />
+          <Property Name="date_to_update_billing" Type="datetime" />
+          <Property Name="billing_id" Type="int" />
+          <Property Name="zone" Type="int" />
+          <Property Name="processed_by" Type="smallint" />
+          <Property Name="date_checked" Type="datetime" />
+          <Property Name="checked_by" Type="smallint" />
+          <Property Name="date_bill_printed" Type="datetime" />
+          <Property Name="bill_printed_by" Type="smallint" />
+        </EntityType>
+        <EntityType Name="tbBillingSummary">
+          <Key>
+            <PropertyRef Name="summary_id" />
+          </Key>
+          <Property Name="summary_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="zone" Type="varchar" MaxLength="4" />
+          <Property Name="cum" Type="int" />
+          <Property Name="billed" Type="int" />
+          <Property Name="ar" Type="decimal" Scale="2" />
+          <Property Name="sales" Type="decimal" Scale="2" />
+          <Property Name="penalty" Type="decimal" Scale="2" />
+          <Property Name="billmonth" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tbBillPrinted">
+          <Key>
+            <PropertyRef Name="billprint_id" />
+          </Key>
+          <Property Name="billprint_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="bill_month" Type="varchar" MaxLength="20" />
+          <Property Name="acctno" Type="varchar" MaxLength="10" />
+          <Property Name="meter_no" Type="varchar" MaxLength="20" />
+          <Property Name="fullname" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="address" Type="varchar" MaxLength="100" />
+          <Property Name="from_to" Type="varchar" MaxLength="30" />
+          <Property Name="rdg_pres" Type="int" Nullable="false" />
+          <Property Name="rdg_prev" Type="int" Nullable="false" />
+          <Property Name="volume" Type="int" Nullable="false" />
+          <Property Name="current" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="mtr_mtn" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="arrears" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="dmg_mtr" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="senior" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="if2" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="total" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="duedate_bank" Type="datetime" />
+          <Property Name="duedate_surcharge" Type="datetime" />
+          <Property Name="surcharge" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="total_w_surcharge" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="bill_ref_no" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="master_id" Type="int" Nullable="false" />
+          <Property Name="billing_id" Type="int" Nullable="false" />
+          <Property Name="date_disco" Type="datetime" />
+          <Property Name="card_no" Type="int" />
+          <Property Name="class_type" Type="int" />
+          <Property Name="zone_book" Type="varchar" MaxLength="5" />
+          <Property Name="uid" Type="int" Nullable="false" />
+          <Property Name="date_printed" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbBillProcessing">
+          <Key>
+            <PropertyRef Name="bill_process_id" />
+          </Key>
+          <Property Name="bill_process_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="zone_book" Type="varchar" MaxLength="6" />
+          <Property Name="meter_reader" Type="varchar" MaxLength="30" />
+          <Property Name="mrs_controls" Type="varchar" MaxLength="100" />
+          <Property Name="date_processed" Type="datetime" />
+          <Property Name="processed_by" Type="smallint" />
+          <Property Name="date_checked" Type="datetime" />
+          <Property Name="checked_by" Type="smallint" />
+          <Property Name="date_printed" Type="datetime" />
+          <Property Name="printed_by" Type="smallint" />
+          <Property Name="billing_id" Type="int" />
+        </EntityType>
+        <EntityType Name="tbDailyARCustomer">
+          <Key>
+            <PropertyRef Name="arcol_id" />
+          </Key>
+          <Property Name="arcol_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="date_trans" Type="datetime" />
+          <Property Name="zone" Type="int" />
+          <Property Name="col_amount" Type="decimal" Scale="2" />
+          <Property Name="col_penalty" Type="decimal" Scale="2" />
+          <Property Name="col_mtrmtn" Type="decimal" Scale="2" />
+          <Property Name="col_scno" Type="int" />
+          <Property Name="col_sundries" Type="decimal" Scale="2" />
+          <Property Name="col_arrears_curr" Type="decimal" Scale="2" />
+          <Property Name="col_arrears_prior" Type="decimal" Scale="2" />
+          <Property Name="col_instfee" Type="decimal" Scale="2" />
+          <Property Name="col_reconfee" Type="decimal" Scale="2" />
+          <Property Name="col_transfee" Type="decimal" Scale="2" />
+          <Property Name="col_dmgmtr" Type="decimal" Scale="2" />
+          <Property Name="date_generated" Type="datetime" />
+          <Property Name="generated_by" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="tbDailySummary">
+          <Key>
+            <PropertyRef Name="summary_id" />
+          </Key>
+          <Property Name="summary_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="trans_date" Type="datetime" />
+          <Property Name="done_by" Type="varchar" MaxLength="20" />
+          <Property Name="collections_office_sales" Type="decimal" Scale="2" />
+          <Property Name="collections_office_others" Type="decimal" Scale="2" />
+          <Property Name="collections_bank" Type="decimal" Scale="2" />
+          <Property Name="balance_master" Type="decimal" Scale="2" />
+          <Property Name="balance_instfee" Type="decimal" Scale="2" />
+          <Property Name="new_accounts" Type="int" />
+          <Property Name="bam_amt_debit" Type="decimal" Scale="2" />
+          <Property Name="bam_count_debit" Type="int" />
+          <Property Name="bills_uploaded" Type="int" />
+          <Property Name="bills_amount" Type="decimal" Scale="2" />
+          <Property Name="bam_amt_credit" Type="decimal" Scale="2" />
+          <Property Name="bam_count_credit" Type="int" />
+          <Property Name="penalty_amt" Type="decimal" Scale="2" />
+          <Property Name="penalty_count" Type="int" />
+        </EntityType>
+        <EntityType Name="tbDeptDivisionHeads">
+          <Key>
+            <PropertyRef Name="head_id" />
+          </Key>
+          <Property Name="head_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DeptDiv" Type="varchar" MaxLength="30" />
+          <Property Name="DeptDivHead" Type="varchar" MaxLength="30" />
+          <Property Name="user_id" Type="int" />
+          <Property Name="designation" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbDiscoEntry">
+          <Key>
+            <PropertyRef Name="disco_id" />
+          </Key>
+          <Property Name="disco_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="disco_date" Type="datetime" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="processed" Type="int" Nullable="false" />
+          <Property Name="zoneid" Type="int" />
+          <Property Name="entry_date" Type="datetime" />
+          <Property Name="entry_by" Type="varchar" MaxLength="6" />
+          <Property Name="processed_date" Type="datetime" />
+          <Property Name="processed_by" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="tbDMAList">
+          <Key>
+            <PropertyRef Name="dma_id" />
+          </Key>
+          <Property Name="dma_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="subd_name" Type="varchar" MaxLength="30" />
+          <Property Name="search_str" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="tbDownloadAgentsHistory">
+          <Key>
+            <PropertyRef Name="dlagent_id" />
+          </Key>
+          <Property Name="dlagent_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="dlagent_date" Type="datetime" />
+          <Property Name="zonebook" Type="varchar" MaxLength="10" />
+          <Property Name="billmonth" Type="varchar" MaxLength="10" />
+          <Property Name="downloadby" Type="varchar" MaxLength="30" />
+          <Property Name="numrec" Type="int" />
+          <Property Name="agent_name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbLedger">
+          <Key>
+            <PropertyRef Name="ledger_id" />
+            <PropertyRef Name="master_id" />
+          </Key>
+          <Property Name="ledger_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="code" Type="varchar" MaxLength="8" />
+          <Property Name="ref" Type="varchar" MaxLength="10" />
+          <Property Name="presrdg" Type="int" />
+          <Property Name="trans_date" Type="datetime" />
+          <Property Name="volume" Type="int" />
+          <Property Name="symbol" Type="varchar" MaxLength="2" />
+          <Property Name="encoder" Type="varchar" MaxLength="6" />
+          <Property Name="remarks" Type="varchar" MaxLength="50" />
+          <Property Name="remarks_date" Type="datetime" />
+          <Property Name="remarks_by" Type="varchar" MaxLength="18" />
+          <Property Name="master_id" Type="int" Nullable="false" />
+          <Property Name="billing_id" Type="int" />
+          <Property Name="amount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="balance" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="other" Type="decimal" />
+          <Property Name="zoneuid" Type="int" />
+        </EntityType>
+        <EntityType Name="tbMaintenanceOrder">
+          <Key>
+            <PropertyRef Name="morder_id" />
+          </Key>
+          <Property Name="morder_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="acctno" Type="varchar" MaxLength="6" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="trans_date" Type="datetime" />
+          <Property Name="time_paid" Type="datetime" />
+          <Property Name="or_num" Type="varchar" MaxLength="10" />
+          <Property Name="totalamt_paid" Type="decimal" Scale="2" />
+          <Property Name="date_disco" Type="datetime" />
+          <Property Name="date_reco" Type="datetime" />
+          <Property Name="reco_by" Type="varchar" MaxLength="30" />
+          <Property Name="prepared_by" Type="varchar" MaxLength="30" />
+          <Property Name="mtr_no_installed" Type="varchar" MaxLength="15" />
+          <Property Name="mtr_reading" Type="int" />
+          <Property Name="remarks" Type="varchar" MaxLength="150" />
+          <Property Name="rfeeamt_paid" Type="decimal" Scale="2" />
+          <Property Name="category" Type="int" />
+          <Property Name="dateprinted" Type="datetime" />
+          <Property Name="meterno" Type="varchar" MaxLength="15" />
+          <Property Name="work_desc" Type="varchar" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="tbMaster">
+          <Key>
+            <PropertyRef Name="master_id" />
+          </Key>
+          <Property Name="master_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="acctno" Type="char" Nullable="false" MaxLength="6" />
+          <Property Name="name" Type="char" Nullable="false" MaxLength="50" />
+          <Property Name="address" Type="char" Nullable="false" MaxLength="100" />
+          <Property Name="category" Type="int" />
+          <Property Name="cardno" Type="int" />
+          <Property Name="date_installed" Type="datetime" />
+          <Property Name="date_encoded" Type="datetime" />
+          <Property Name="encoded_by" Type="char" MaxLength="10" />
+          <Property Name="remarks" Type="char" MaxLength="250" />
+          <Property Name="status" Type="char" MaxLength="2" />
+          <Property Name="last_edit_by" Type="char" MaxLength="18" />
+          <Property Name="last_edit_date" Type="datetime" />
+          <Property Name="last_disco_date" Type="datetime" />
+          <Property Name="last_reco_date" Type="datetime" />
+          <Property Name="remarks_date" Type="datetime" />
+          <Property Name="remarks_by" Type="char" MaxLength="18" />
+          <Property Name="zone_id" Type="int" Nullable="false" />
+          <Property Name="meter_id" Type="int" Nullable="false" />
+          <Property Name="tin_no" Type="varchar" MaxLength="18" />
+          <Property Name="senior_id" Type="varchar" MaxLength="18" />
+          <Property Name="last_read_date" Type="datetime" />
+          <Property Name="prev_read_date" Type="datetime" />
+          <Property Name="gps_data" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tbMasterAccts">
+          <Key>
+            <PropertyRef Name="master_id" />
+            <PropertyRef Name="masteracct_id" />
+          </Key>
+          <Property Name="isSenior" Type="bit" />
+          <Property Name="senior_expiry" Type="datetime" />
+          <Property Name="isIF" Type="bit" />
+          <Property Name="bill_last_bill_id" Type="int" />
+          <Property Name="bill_volume" Type="int" />
+          <Property Name="bill_delivery_date" Type="datetime" />
+          <Property Name="IFAmount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="IFPayableMonths" Type="int" />
+          <Property Name="IFBalance" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="IFCurrentPayMonth" Type="int" />
+          <Property Name="IFMonthlyPay" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="bill_current" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="bill_reading_period" Type="char" MaxLength="30" />
+          <Property Name="bill_balance" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="bill_arrears" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="arrears_curr_yr" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="arrears_prev_yrs" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="master_id" Type="int" Nullable="false" />
+          <Property Name="masteracct_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IFDownpayment" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="isMtrDmg" Type="bit" />
+          <Property Name="MtrDmg_Amount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_Balance" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_Monthly" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_MonthsPayable" Type="smallint" />
+          <Property Name="MtrDmg_Downpayment" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="bill_arrears_months" Type="smallint" />
+          <Property Name="rdg_prev" Type="int" />
+          <Property Name="rdg_pres" Type="int" />
+          <Property Name="ave_vol" Type="int" />
+          <Property Name="IFArrears" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_Arrears" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="penalty" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="senior_amt" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbMasterAging">
+          <Key>
+            <PropertyRef Name="aging_id" />
+          </Key>
+          <Property Name="aging_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="balance" Type="decimal" Scale="2" />
+          <Property Name="day1to60" Type="decimal" Scale="2" />
+          <Property Name="day61to180" Type="decimal" Scale="2" />
+          <Property Name="day181to365" Type="decimal" Scale="2" />
+          <Property Name="over365" Type="decimal" Scale="2" />
+          <Property Name="day0" Type="decimal" Scale="2" />
+          <Property Name="zone_id" Type="int" />
+          <Property Name="status" Type="varchar" MaxLength="1" />
+          <Property Name="date_generated" Type="datetime2" />
+          <Property Name="ctgy" Type="int" />
+          <Property Name="billing_id" Type="int" />
+        </EntityType>
+        <EntityType Name="tbMeterReader">
+          <Key>
+            <PropertyRef Name="mr_id" />
+          </Key>
+          <Property Name="mr_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="mr_name" Type="varchar" MaxLength="30" />
+          <Property Name="mr_control" Type="varchar" MaxLength="12" />
+          <Property Name="initials" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbMeters">
+          <Key>
+            <PropertyRef Name="meter_id" />
+          </Key>
+          <Property Name="meter_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="meterno" Type="char" Nullable="false" MaxLength="18" />
+          <Property Name="brand" Type="char" MaxLength="18" />
+          <Property Name="dia_size" Type="char" MaxLength="5" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="prev_meter" Type="varchar" MaxLength="150" />
+          <Property Name="date_installed" Type="datetime" />
+          <Property Name="remarks" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tbMrsDownload">
+          <Key>
+            <PropertyRef Name="mrsdown_ID" />
+          </Key>
+          <Property Name="md_ave" Type="int" />
+          <Property Name="md_status" Type="char" MaxLength="20" />
+          <Property Name="md_acctno" Type="char" MaxLength="30" />
+          <Property Name="md_zone" Type="char" MaxLength="10" />
+          <Property Name="md_senior" Type="numeric" Precision="10" />
+          <Property Name="md_ledgrp" Type="char" MaxLength="5" />
+          <Property Name="md_name" Type="char" MaxLength="40" />
+          <Property Name="md_address" Type="char" MaxLength="50" />
+          <Property Name="md_metno" Type="char" MaxLength="15" />
+          <Property Name="md_ctgry" Type="char" MaxLength="10" />
+          <Property Name="md_cardno" Type="int" />
+          <Property Name="md_mon_arr" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_crrent" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_days30" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_days60" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_days90" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_arrears" Type="numeric" Precision="20" Scale="2" />
+          <Property Name="md_penalty" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_metdep" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_dam_met" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_others" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_instfee" Type="numeric" Precision="15" Scale="2" />
+          <Property Name="md_datepres" Type="date" />
+          <Property Name="md_dateprev" Type="date" />
+          <Property Name="md_duedate" Type="date" />
+          <Property Name="md_discdate" Type="date" />
+          <Property Name="md_presrdg" Type="int" />
+          <Property Name="md_prevrdg" Type="int" />
+          <Property Name="md_volume" Type="int" />
+          <Property Name="md_remark" Type="char" MaxLength="20" />
+          <Property Name="md_ref" Type="char" MaxLength="20" />
+          <Property Name="md_collagents" Type="char" MaxLength="75" />
+          <Property Name="mrsdown_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="md_masterID" Type="int" />
+          <Property Name="md_duedateAgents" Type="date" />
+        </EntityType>
+        <EntityType Name="tbMRSDownloadHistory">
+          <Key>
+            <PropertyRef Name="dl_historyID" />
+          </Key>
+          <Property Name="dl_historyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="dl_date" Type="datetime" />
+          <Property Name="dl_billmonth" Type="varchar" MaxLength="8" />
+          <Property Name="dl_zonebook" Type="varchar" MaxLength="8" />
+          <Property Name="dl_doneby" Type="varchar" MaxLength="20" />
+          <Property Name="dl_numrecords" Type="int" />
+        </EntityType>
+        <EntityType Name="tbMrsUpload">
+          <Key>
+            <PropertyRef Name="mrsUP_ID" />
+          </Key>
+          <Property Name="md_billmonth" Type="varchar" MaxLength="10" />
+          <Property Name="md_billno" Type="text" />
+          <Property Name="md_acctno" Type="varchar" MaxLength="15" />
+          <Property Name="md_zone" Type="varchar" MaxLength="10" />
+          <Property Name="md_ctgry" Type="text" />
+          <Property Name="md_prevrdg" Type="text" />
+          <Property Name="md_presrdg" Type="text" />
+          <Property Name="md_volume" Type="text" />
+          <Property Name="md_billamount" Type="text" />
+          <Property Name="md_readtime" Type="text" />
+          <Property Name="md_ffcode" Type="text" />
+          <Property Name="md_mccode" Type="text" />
+          <Property Name="md_remark" Type="text" />
+          <Property Name="md_encoder" Type="text" />
+          <Property Name="md_dateuploaded" Type="text" />
+          <Property Name="mrsUP_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="md_masterID" Type="int" />
+        </EntityType>
+        <EntityType Name="tbMrsUploadEdit">
+          <Key>
+            <PropertyRef Name="editUpload_id" />
+          </Key>
+          <Property Name="editUpload_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="editReason" Type="varchar" MaxLength="150" />
+          <Property Name="editBy" Type="varchar" MaxLength="30" />
+          <Property Name="old_refnum" Type="varchar" MaxLength="10" />
+          <Property Name="old_presrdg" Type="int" />
+          <Property Name="old_prevrdg" Type="int" />
+          <Property Name="old_volume" Type="int" />
+          <Property Name="edit_date" Type="datetime" />
+          <Property Name="old_amount" Type="decimal" />
+          <Property Name="old_datepres" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbMRSUploadHistory">
+          <Key>
+            <PropertyRef Name="up_historyID" />
+          </Key>
+          <Property Name="up_historyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="up_date" Type="datetime" />
+          <Property Name="up_billmonth" Type="varchar" MaxLength="8" />
+          <Property Name="up_zonebook" Type="varchar" MaxLength="8" />
+          <Property Name="up_doneby" Type="varchar" MaxLength="20" />
+          <Property Name="up_numrecords" Type="int" />
+        </EntityType>
+        <EntityType Name="tbPay">
+          <Key>
+            <PropertyRef Name="pay_id" />
+          </Key>
+          <Property Name="pay_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="zone_id" Type="varchar" MaxLength="2" />
+          <Property Name="yrmon" Type="varchar" MaxLength="8" />
+          <Property Name="status" Type="varchar" MaxLength="1" />
+          <Property Name="source" Type="varchar" MaxLength="3" />
+          <Property Name="ledgrp" Type="varchar" MaxLength="1" />
+          <Property Name="acctno" Type="varchar" MaxLength="6" />
+          <Property Name="date" Type="datetime" />
+          <Property Name="ref" Type="int" />
+          <Property Name="checkno" Type="varchar" MaxLength="15" />
+          <Property Name="mode" Type="varchar" MaxLength="2" />
+          <Property Name="collected" Type="decimal" Scale="2" />
+          <Property Name="current" Type="decimal" Scale="2" />
+          <Property Name="penalty" Type="decimal" Scale="2" />
+          <Property Name="ar_curr" Type="decimal" Scale="2" />
+          <Property Name="ar_pri" Type="decimal" Scale="2" />
+          <Property Name="metdep" Type="decimal" Scale="2" />
+          <Property Name="mtrmain" Type="decimal" Scale="2" />
+          <Property Name="dmgmtr" Type="decimal" Scale="2" />
+          <Property Name="instfee" Type="decimal" Scale="2" />
+          <Property Name="svfee" Type="decimal" Scale="2" />
+          <Property Name="tffee" Type="decimal" Scale="2" />
+          <Property Name="royalty" Type="decimal" Scale="2" />
+          <Property Name="sdrcode" Type="varchar" MaxLength="6" />
+          <Property Name="sdramt" Type="decimal" Scale="2" />
+          <Property Name="encoder" Type="varchar" MaxLength="10" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="remarks" Type="varchar" MaxLength="30" />
+          <Property Name="tendered_amt" Type="decimal" Scale="2" />
+          <Property Name="change_due" Type="decimal" Scale="2" />
+          <Property Name="time_pay" Type="datetime" />
+          <Property Name="senior" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbPaySDR">
+          <Key>
+            <PropertyRef Name="SDRdetails_ID" />
+          </Key>
+          <Property Name="SDRdetails_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="payID" Type="int" />
+          <Property Name="encoder" Type="varchar" MaxLength="10" />
+          <Property Name="trans_date" Type="datetime" />
+          <Property Name="sdr_code" Type="varchar" MaxLength="10" />
+          <Property Name="sdr_amount" Type="decimal" />
+        </EntityType>
+        <EntityType Name="tbPenaltyHistory">
+          <Key>
+            <PropertyRef Name="penalty_id" />
+          </Key>
+          <Property Name="penalty_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="billmonth" Type="varchar" MaxLength="10" />
+          <Property Name="zone" Type="varchar" MaxLength="4" />
+          <Property Name="date_generated" Type="datetime" />
+          <Property Name="due_date" Type="datetime" />
+          <Property Name="done_by" Type="varchar" MaxLength="6" />
+          <Property Name="total_amount" Type="decimal" Scale="2" />
+          <Property Name="record_count" Type="int" />
+          <Property Name="government_only" Type="varchar" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="tbPrepareAcctHistory">
+          <Key>
+            <PropertyRef Name="process_id" />
+          </Key>
+          <Property Name="process_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="prepare_billing_of" Type="varchar" MaxLength="10" />
+          <Property Name="date_process" Type="datetime" />
+          <Property Name="done_by" Type="varchar" MaxLength="10" />
+          <Property Name="numrecords" Type="int" />
+          <Property Name="disco_processed" Type="int" />
+          <Property Name="disco_marked" Type="int" />
+          <Property Name="disco_reconnected" Type="int" />
+        </EntityType>
+        <EntityType Name="tbPrintTemp">
+          <Key>
+            <PropertyRef Name="row_id" />
+          </Key>
+          <Property Name="row_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="print_code" Type="varchar" MaxLength="10" />
+          <Property Name="col_string1" Type="varchar" MaxLength="50" />
+          <Property Name="col_string2" Type="varchar" MaxLength="50" />
+          <Property Name="col_string3" Type="varchar" MaxLength="50" />
+          <Property Name="col_string4" Type="varchar" MaxLength="50" />
+          <Property Name="col_string5" Type="varchar" MaxLength="50" />
+          <Property Name="col_decimal1" Type="decimal" Scale="2" />
+          <Property Name="col_decimal2" Type="decimal" Scale="2" />
+          <Property Name="col_decimal3" Type="decimal" Scale="2" />
+          <Property Name="col_decimal4" Type="decimal" Scale="2" />
+          <Property Name="col_decimal5" Type="decimal" Scale="2" />
+          <Property Name="col_int1" Type="int" />
+          <Property Name="col_int2" Type="int" />
+          <Property Name="col_int3" Type="int" />
+          <Property Name="col_int4" Type="int" />
+          <Property Name="col_int5" Type="int" />
+          <Property Name="col_uid" Type="int" />
+        </EntityType>
+        <EntityType Name="tbRates">
+          <Key>
+            <PropertyRef Name="rate_id" />
+          </Key>
+          <Property Name="rate_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="category_code" Type="varchar" MaxLength="4" />
+          <Property Name="rate_code" Type="varchar" MaxLength="4" />
+          <Property Name="size" Type="varchar" MaxLength="5" />
+          <Property Name="min_vol" Type="int" />
+          <Property Name="max_vol" Type="int" />
+          <Property Name="minimum_pay" Type="decimal" Scale="2" />
+          <Property Name="r11_20" Type="decimal" Scale="2" />
+          <Property Name="r21_30" Type="decimal" Scale="2" />
+          <Property Name="r31_40" Type="decimal" Scale="2" />
+          <Property Name="r41_50" Type="decimal" Scale="2" />
+          <Property Name="r51_up" Type="decimal" Scale="2" />
+          <Property Name="mrental" Type="decimal" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbRecapSales">
+          <Key>
+            <PropertyRef Name="recap_id" />
+          </Key>
+          <Property Name="recap_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="billmonth" Type="varchar" MaxLength="10" />
+          <Property Name="zonebook" Type="varchar" MaxLength="4" />
+          <Property Name="category" Type="varchar" MaxLength="15" />
+          <Property Name="vol_ctgr" Type="varchar" MaxLength="15" />
+          <Property Name="num_con" Type="int" />
+          <Property Name="total_vol" Type="int" />
+          <Property Name="total_amt" Type="decimal" Scale="2" />
+          <Property Name="code" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="tbSDRLookup">
+          <Key>
+            <PropertyRef Name="sdr_id" />
+          </Key>
+          <Property Name="sdr_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="sdr_code" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="sdr_desc" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="tbSeniorHistory">
+          <Key>
+            <PropertyRef Name="seniorhistory_id" />
+          </Key>
+          <Property Name="seniorhistory_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="reg_date" Type="datetime" />
+          <Property Name="exp_date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbSeriesNo">
+          <Key>
+            <PropertyRef Name="series_id" />
+          </Key>
+          <Property Name="series_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="form_name" Type="varchar" MaxLength="15" />
+          <Property Name="series_num" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="tbServiceRequest">
+          <Key>
+            <PropertyRef Name="sr_id" />
+          </Key>
+          <Property Name="sr_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="sr_no" Type="varchar" MaxLength="6" />
+          <Property Name="billdetails_id" Type="int" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="complain_id" Type="int" />
+          <Property Name="requested_by" Type="varchar" MaxLength="30" />
+          <Property Name="request_recd_by" Type="varchar" MaxLength="30" />
+          <Property Name="request_recd_date" Type="datetime" />
+          <Property Name="inspected_by" Type="varchar" MaxLength="30" />
+          <Property Name="inspected_date" Type="datetime" />
+          <Property Name="remarks" Type="varchar" MaxLength="250" />
+          <Property Name="status" Type="smallint" />
+          <Property Name="encoder_id" Type="int" />
+          <Property Name="complain_desc" Type="varchar" MaxLength="150" />
+          <Property Name="work_done" Type="varchar" MaxLength="150" />
+          <Property Name="last_rdg" Type="varchar" MaxLength="5" />
+          <Property Name="initial_rdg" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tbServiceRequestCodes">
+          <Key>
+            <PropertyRef Name="srcode_id" />
+          </Key>
+          <Property Name="srcode_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="sr_code" Type="varchar" MaxLength="3" />
+          <Property Name="code_desc" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="tbSettings">
+          <Key>
+            <PropertyRef Name="settings_id" />
+          </Key>
+          <Property Name="settings_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="senior_percentage" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="senior_volume_cap" Type="int" />
+          <Property Name="meter_mtn" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="penalty_percentage" Type="int" />
+          <Property Name="collecting_agents" Type="varchar" MaxLength="200" />
+          <Property Name="rf_residential" Type="decimal" />
+          <Property Name="rf_commercial" Type="decimal" />
+          <Property Name="mrs_ipaddress" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="tbUsers">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fullname" Type="varchar" MaxLength="30" />
+          <Property Name="user_name" Type="varchar" MaxLength="15" />
+          <Property Name="pass_word" Type="varchar" MaxLength="10" />
+          <Property Name="admin" Type="int" />
+          <Property Name="Billing" Type="int" />
+          <Property Name="Cashier" Type="int" />
+          <Property Name="Disco" Type="int" />
+          <Property Name="Meter" Type="int" />
+          <Property Name="CSD" Type="int" />
+          <Property Name="last_program_used" Type="varchar" MaxLength="18" />
+          <Property Name="last_login" Type="datetime" />
+          <Property Name="remarks" Type="varchar" MaxLength="100" />
+          <Property Name="initials" Type="varchar" MaxLength="5" />
+          <Property Name="last_computer_used" Type="varchar" MaxLength="30" />
+          <Property Name="access_code" Type="int" />
+          <Property Name="job_desc" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbZone">
+          <Key>
+            <PropertyRef Name="zone_id" />
+          </Key>
+          <Property Name="zone_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="location" Type="char" MaxLength="100" />
+          <Property Name="mtr_reader" Type="int" />
+          <Property Name="bill_server" Type="char" MaxLength="50" />
+          <Property Name="zone_name" Type="varchar" MaxLength="4" />
+          <Property Name="zone_uid" Type="int" />
+        </EntityType>
+        <EntityType Name="tbZoneLookup">
+          <Key>
+            <PropertyRef Name="zone_lookup_id" />
+          </Key>
+          <Property Name="zone_lookup_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="zone_uid" Type="int" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbCommercial" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="dbCommercialEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbAgingSummaries" EntityType="dbCommercial.tbAgingSummary" />
+          <EntitySet Name="tbBAMCases" EntityType="dbCommercial.tbBAMCas" />
+          <EntitySet Name="tbBAMEntries" EntityType="dbCommercial.tbBAMEntry" />
+          <EntitySet Name="tbBAMLookups" EntityType="dbCommercial.tbBAMLookup" />
+          <EntitySet Name="tbBankCodes" EntityType="dbCommercial.tbBankCode" />
+          <EntitySet Name="tbBankCollections" EntityType="dbCommercial.tbBankCollection" />
+          <EntitySet Name="tbBillings" EntityType="dbCommercial.tbBilling" />
+          <EntitySet Name="tbBillingCollections" EntityType="dbCommercial.tbBillingCollection" />
+          <EntitySet Name="tbBillingDeletes" EntityType="dbCommercial.tbBillingDelete" />
+          <EntitySet Name="tbBillingDetails" EntityType="dbCommercial.tbBillingDetail" />
+          <EntitySet Name="tbBillingSchedules" EntityType="dbCommercial.tbBillingSchedule" />
+          <EntitySet Name="tbBillingSummaries" EntityType="dbCommercial.tbBillingSummary" />
+          <EntitySet Name="tbBillPrinteds" EntityType="dbCommercial.tbBillPrinted" />
+          <EntitySet Name="tbBillProcessings" EntityType="dbCommercial.tbBillProcessing" />
+          <EntitySet Name="tbDailyARCustomers" EntityType="dbCommercial.tbDailyARCustomer" />
+          <EntitySet Name="tbDailySummaries" EntityType="dbCommercial.tbDailySummary" />
+          <EntitySet Name="tbDeptDivisionHeads" EntityType="dbCommercial.tbDeptDivisionHead" />
+          <EntitySet Name="tbDiscoEntries" EntityType="dbCommercial.tbDiscoEntry" />
+          <EntitySet Name="tbDMALists" EntityType="dbCommercial.tbDMAList" />
+          <EntitySet Name="tbDownloadAgentsHistories" EntityType="dbCommercial.tbDownloadAgentsHistory" />
+          <EntitySet Name="tbLedgers" EntityType="dbCommercial.tbLedger" />
+          <EntitySet Name="tbMaintenanceOrders" EntityType="dbCommercial.tbMaintenanceOrder" />
+          <EntitySet Name="tbMasters" EntityType="dbCommercial.tbMaster" />
+          <EntitySet Name="tbMasterAccts" EntityType="dbCommercial.tbMasterAcct" />
+          <EntitySet Name="tbMasterAgings" EntityType="dbCommercial.tbMasterAging" />
+          <EntitySet Name="tbMeterReaders" EntityType="dbCommercial.tbMeterReader" />
+          <EntitySet Name="tbMeters" EntityType="dbCommercial.tbMeter" />
+          <EntitySet Name="tbMrsDownloads" EntityType="dbCommercial.tbMrsDownload" />
+          <EntitySet Name="tbMRSDownloadHistories" EntityType="dbCommercial.tbMRSDownloadHistory" />
+          <EntitySet Name="tbMrsUploads" EntityType="dbCommercial.tbMrsUpload" />
+          <EntitySet Name="tbMrsUploadEdits" EntityType="dbCommercial.tbMrsUploadEdit" />
+          <EntitySet Name="tbMRSUploadHistories" EntityType="dbCommercial.tbMRSUploadHistory" />
+          <EntitySet Name="tbPays" EntityType="dbCommercial.tbPay" />
+          <EntitySet Name="tbPaySDRs" EntityType="dbCommercial.tbPaySDR" />
+          <EntitySet Name="tbPenaltyHistories" EntityType="dbCommercial.tbPenaltyHistory" />
+          <EntitySet Name="tbPrepareAcctHistories" EntityType="dbCommercial.tbPrepareAcctHistory" />
+          <EntitySet Name="tbPrintTemps" EntityType="dbCommercial.tbPrintTemp" />
+          <EntitySet Name="tbRates" EntityType="dbCommercial.tbRate" />
+          <EntitySet Name="tbRecapSales" EntityType="dbCommercial.tbRecapSale" />
+          <EntitySet Name="tbSDRLookups" EntityType="dbCommercial.tbSDRLookup" />
+          <EntitySet Name="tbSeniorHistories" EntityType="dbCommercial.tbSeniorHistory" />
+          <EntitySet Name="tbSeriesNoes" EntityType="dbCommercial.tbSeriesNo" />
+          <EntitySet Name="tbServiceRequests" EntityType="dbCommercial.tbServiceRequest" />
+          <EntitySet Name="tbServiceRequestCodes" EntityType="dbCommercial.tbServiceRequestCode" />
+          <EntitySet Name="tbSettings" EntityType="dbCommercial.tbSetting" />
+          <EntitySet Name="tbUsers" EntityType="dbCommercial.tbUser" />
+          <EntitySet Name="tbZones" EntityType="dbCommercial.tbZone" />
+          <EntitySet Name="tbZoneLookups" EntityType="dbCommercial.tbZoneLookup" />
+        </EntityContainer>
+        <EntityType Name="tbAgingSummary">
+          <Key>
+            <PropertyRef Name="summary_id" />
+          </Key>
+          <Property Name="summary_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="status" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="billmonth" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="ctgry" Type="Int32" />
+          <Property Name="total_con" Type="Int32" />
+          <Property Name="balance" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="days0" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="days1to60" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="days61to180" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="days181to365" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="over365" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbBAMCas">
+          <Key>
+            <PropertyRef Name="bcase_id" />
+          </Key>
+          <Property Name="bcase_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="case_desc" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="case_type" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBAMEntry">
+          <Key>
+            <PropertyRef Name="bamdetail_id" />
+          </Key>
+          <Property Name="bamdetail_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bamcase_id" Type="Int32" />
+          <Property Name="bamno" Type="Int32" />
+          <Property Name="bam_date" Type="DateTime" />
+          <Property Name="acctname" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="acctno" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="zoneno" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="cardno" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="explanation" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+          <Property Name="acct_title" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
+          <Property Name="bam_type" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="debit" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="credit" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="billmonth" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+          <Property Name="cum_as_billed" Type="Int32" />
+          <Property Name="cum_should_be" Type="Int32" />
+          <Property Name="cum_adjustment" Type="Int32" />
+          <Property Name="amt_as_billed" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="amt_should_be" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="amt_adjustment" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="prepared_by_id" Type="Int32" />
+          <Property Name="approved_by_id" Type="Int32" />
+          <Property Name="last_reading" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbBAMLookup">
+          <Key>
+            <PropertyRef Name="bam_id" />
+          </Key>
+          <Property Name="bam_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bam_desc" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="bam_type" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="bam_code" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBankCode">
+          <Key>
+            <PropertyRef Name="bank_id" />
+          </Key>
+          <Property Name="bank_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bank_code" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="bank_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBankCollection">
+          <Key>
+            <PropertyRef Name="collect_id" />
+          </Key>
+          <Property Name="collect_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="refnum" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="zone" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="current" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="arrears" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="others" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="senior" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="date_posted" Type="DateTime" />
+          <Property Name="date_collected" Type="DateTime" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="posted_by" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="collect_agent" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="totalamt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="billmonth" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="mtr_mtn" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="dmg_mtr" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="updated" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBilling">
+          <Key>
+            <PropertyRef Name="billing_id" />
+          </Key>
+          <Property Name="billing_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="billing_desc" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="billing_start" Type="DateTime" />
+          <Property Name="billing_end" Type="DateTime" />
+          <Property Name="num_of_bills_processed" Type="Int32" />
+          <Property Name="num_of_bills_arrears" Type="Int32" />
+          <Property Name="total_bill_amount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="total_arrears_amount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="total_days" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="loaded_to_zones" Type="Boolean" />
+          <Property Name="remarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="processed_date" Type="DateTime" />
+          <Property Name="processed_by" Type="Int16" />
+          <Property Name="print_counter" Type="Int16" />
+          <Property Name="last_printdate" Type="DateTime" />
+          <Property Name="last_printby" Type="Int16" />
+          <Property Name="checked_date" Type="DateTime" />
+          <Property Name="checked_by" Type="Int16" />
+          <Property Name="posted_date" Type="DateTime" />
+          <Property Name="posted_by" Type="Int16" />
+          <Property Name="bill_month" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBillingCollection">
+          <Key>
+            <PropertyRef Name="billcol_id" />
+          </Key>
+          <Property Name="billcol_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date_trans" Type="DateTime" />
+          <Property Name="zone" Type="Int32" />
+          <Property Name="bill_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bill_penalty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bill_mtrmtn" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bill_cum" Type="Int32" />
+          <Property Name="bill_scno" Type="Int32" />
+          <Property Name="bam_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bam_cum" Type="Int32" />
+          <Property Name="bam_scno" Type="Int32" />
+          <Property Name="col_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_penalty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_mtrmtn" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_scno" Type="Int32" />
+          <Property Name="date_generated" Type="DateTime" />
+          <Property Name="generated_by" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBillingDelete">
+          <Key>
+            <PropertyRef Name="billdelete_id" />
+          </Key>
+          <Property Name="billdelete_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="billproc_id" Type="Int32" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="remarks" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="date_deleted" Type="DateTime" />
+          <Property Name="rdg_prev" Type="Int32" />
+          <Property Name="rdg_pres" Type="Int32" />
+          <Property Name="volume" Type="Int32" />
+          <Property Name="deleted_by" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbBillingDetail">
+          <Key>
+            <PropertyRef Name="billingdetails_id" />
+            <PropertyRef Name="master_id" />
+            <PropertyRef Name="billproc_id" />
+          </Key>
+          <Property Name="billingdetails_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="mrs_ref" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="ave_vol" Type="Int32" />
+          <Property Name="current" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="date_pres" Type="DateTime" />
+          <Property Name="date_prev" Type="DateTime" />
+          <Property Name="volume" Type="Int32" />
+          <Property Name="penalty" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="mtr_mtn" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="rdg_pres" Type="Int32" />
+          <Property Name="rdg_prev" Type="Int32" />
+          <Property Name="master_id" Type="Int32" Nullable="false" />
+          <Property Name="billproc_id" Type="Int32" Nullable="false" />
+          <Property Name="readtime" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="arrears" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="remarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="sr_id" Type="Int32" />
+          <Property Name="senior" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="inst_fee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="mtr_dmg" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="bill_ref_num" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="mtr_read_by" Type="Int32" />
+          <Property Name="read_edit_by" Type="Int32" />
+          <Property Name="other_fees" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="other_fee_code" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="arrears_month" Type="Int16" />
+        </EntityType>
+        <EntityType Name="tbBillingSchedule">
+          <Key>
+            <PropertyRef Name="billing_sched_id" />
+          </Key>
+          <Property Name="billing_sched_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date_rdg" Type="DateTime" />
+          <Property Name="date_bill_start" Type="DateTime" />
+          <Property Name="date_bill_end" Type="DateTime" />
+          <Property Name="date_processed" Type="DateTime" />
+          <Property Name="date_bill_serve" Type="DateTime" />
+          <Property Name="date_due_disco_arrears" Type="DateTime" />
+          <Property Name="date_due_disco_noarrears" Type="DateTime" />
+          <Property Name="date_due_office" Type="DateTime" />
+          <Property Name="date_due_bank" Type="DateTime" />
+          <Property Name="date_gen_penalty" Type="DateTime" />
+          <Property Name="date_download_agents" Type="DateTime" />
+          <Property Name="date_to_update_billing" Type="DateTime" />
+          <Property Name="billing_id" Type="Int32" />
+          <Property Name="zone" Type="Int32" />
+          <Property Name="processed_by" Type="Int16" />
+          <Property Name="date_checked" Type="DateTime" />
+          <Property Name="checked_by" Type="Int16" />
+          <Property Name="date_bill_printed" Type="DateTime" />
+          <Property Name="bill_printed_by" Type="Int16" />
+        </EntityType>
+        <EntityType Name="tbBillingSummary">
+          <Key>
+            <PropertyRef Name="summary_id" />
+          </Key>
+          <Property Name="summary_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="zone" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="cum" Type="Int32" />
+          <Property Name="billed" Type="Int32" />
+          <Property Name="ar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="sales" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="penalty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="billmonth" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbBillPrinted">
+          <Key>
+            <PropertyRef Name="billprint_id" />
+          </Key>
+          <Property Name="billprint_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bill_month" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="acctno" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="meter_no" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="fullname" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="address" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="from_to" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="rdg_pres" Type="Int32" Nullable="false" />
+          <Property Name="rdg_prev" Type="Int32" Nullable="false" />
+          <Property Name="volume" Type="Int32" Nullable="false" />
+          <Property Name="current" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="mtr_mtn" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="arrears" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="dmg_mtr" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="senior" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="if2" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="total" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="duedate_bank" Type="DateTime" />
+          <Property Name="duedate_surcharge" Type="DateTime" />
+          <Property Name="surcharge" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="total_w_surcharge" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="bill_ref_no" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="master_id" Type="Int32" Nullable="false" />
+          <Property Name="billing_id" Type="Int32" Nullable="false" />
+          <Property Name="date_disco" Type="DateTime" />
+          <Property Name="card_no" Type="Int32" />
+          <Property Name="class_type" Type="Int32" />
+          <Property Name="zone_book" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="uid" Type="Int32" Nullable="false" />
+          <Property Name="date_printed" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbBillProcessing">
+          <Key>
+            <PropertyRef Name="bill_process_id" />
+          </Key>
+          <Property Name="bill_process_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="zone_book" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="meter_reader" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="mrs_controls" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="date_processed" Type="DateTime" />
+          <Property Name="processed_by" Type="Int16" />
+          <Property Name="date_checked" Type="DateTime" />
+          <Property Name="checked_by" Type="Int16" />
+          <Property Name="date_printed" Type="DateTime" />
+          <Property Name="printed_by" Type="Int16" />
+          <Property Name="billing_id" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbDailyARCustomer">
+          <Key>
+            <PropertyRef Name="arcol_id" />
+          </Key>
+          <Property Name="arcol_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date_trans" Type="DateTime" />
+          <Property Name="zone" Type="Int32" />
+          <Property Name="col_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_penalty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_mtrmtn" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_scno" Type="Int32" />
+          <Property Name="col_sundries" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_arrears_curr" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_arrears_prior" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_instfee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_reconfee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_transfee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_dmgmtr" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="date_generated" Type="DateTime" />
+          <Property Name="generated_by" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbDailySummary">
+          <Key>
+            <PropertyRef Name="summary_id" />
+          </Key>
+          <Property Name="summary_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="trans_date" Type="DateTime" />
+          <Property Name="done_by" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="collections_office_sales" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="collections_office_others" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="collections_bank" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="balance_master" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="balance_instfee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="new_accounts" Type="Int32" />
+          <Property Name="bam_amt_debit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bam_count_debit" Type="Int32" />
+          <Property Name="bills_uploaded" Type="Int32" />
+          <Property Name="bills_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bam_amt_credit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bam_count_credit" Type="Int32" />
+          <Property Name="penalty_amt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="penalty_count" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbDeptDivisionHead">
+          <Key>
+            <PropertyRef Name="head_id" />
+          </Key>
+          <Property Name="head_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeptDiv" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="DeptDivHead" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="user_id" Type="Int32" />
+          <Property Name="designation" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbDiscoEntry">
+          <Key>
+            <PropertyRef Name="disco_id" />
+          </Key>
+          <Property Name="disco_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="disco_date" Type="DateTime" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="processed" Type="Int32" Nullable="false" />
+          <Property Name="zoneid" Type="Int32" />
+          <Property Name="entry_date" Type="DateTime" />
+          <Property Name="entry_by" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="processed_date" Type="DateTime" />
+          <Property Name="processed_by" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbDMAList">
+          <Key>
+            <PropertyRef Name="dma_id" />
+          </Key>
+          <Property Name="dma_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="subd_name" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="search_str" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbDownloadAgentsHistory">
+          <Key>
+            <PropertyRef Name="dlagent_id" />
+          </Key>
+          <Property Name="dlagent_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dlagent_date" Type="DateTime" />
+          <Property Name="zonebook" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="billmonth" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="downloadby" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="numrec" Type="Int32" />
+          <Property Name="agent_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbLedger">
+          <Key>
+            <PropertyRef Name="ledger_id" />
+            <PropertyRef Name="master_id" />
+          </Key>
+          <Property Name="ledger_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="code" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="ref" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="presrdg" Type="Int32" />
+          <Property Name="trans_date" Type="DateTime" />
+          <Property Name="volume" Type="Int32" />
+          <Property Name="symbol" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="encoder" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="remarks" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="remarks_date" Type="DateTime" />
+          <Property Name="remarks_by" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="master_id" Type="Int32" Nullable="false" />
+          <Property Name="billing_id" Type="Int32" />
+          <Property Name="amount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="balance" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="other" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="zoneuid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbMaintenanceOrder">
+          <Key>
+            <PropertyRef Name="morder_id" />
+          </Key>
+          <Property Name="morder_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="acctno" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="trans_date" Type="DateTime" />
+          <Property Name="time_paid" Type="DateTime" />
+          <Property Name="or_num" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="totalamt_paid" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="date_disco" Type="DateTime" />
+          <Property Name="date_reco" Type="DateTime" />
+          <Property Name="reco_by" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="prepared_by" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="mtr_no_installed" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="mtr_reading" Type="Int32" />
+          <Property Name="remarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="rfeeamt_paid" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="category" Type="Int32" />
+          <Property Name="dateprinted" Type="DateTime" />
+          <Property Name="meterno" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="work_desc" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbMaster">
+          <Key>
+            <PropertyRef Name="master_id" />
+          </Key>
+          <Property Name="master_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="acctno" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="true" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="address" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="true" />
+          <Property Name="category" Type="Int32" />
+          <Property Name="cardno" Type="Int32" />
+          <Property Name="date_installed" Type="DateTime" />
+          <Property Name="date_encoded" Type="DateTime" />
+          <Property Name="encoded_by" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="remarks" Type="String" MaxLength="250" Unicode="false" FixedLength="true" />
+          <Property Name="status" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="last_edit_by" Type="String" MaxLength="18" Unicode="false" FixedLength="true" />
+          <Property Name="last_edit_date" Type="DateTime" />
+          <Property Name="last_disco_date" Type="DateTime" />
+          <Property Name="last_reco_date" Type="DateTime" />
+          <Property Name="remarks_date" Type="DateTime" />
+          <Property Name="remarks_by" Type="String" MaxLength="18" Unicode="false" FixedLength="true" />
+          <Property Name="zone_id" Type="Int32" Nullable="false" />
+          <Property Name="meter_id" Type="Int32" Nullable="false" />
+          <Property Name="tin_no" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="senior_id" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="last_read_date" Type="DateTime" />
+          <Property Name="prev_read_date" Type="DateTime" />
+          <Property Name="gps_data" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbMasterAcct">
+          <Key>
+            <PropertyRef Name="master_id" />
+            <PropertyRef Name="masteracct_id" />
+          </Key>
+          <Property Name="isSenior" Type="Boolean" />
+          <Property Name="senior_expiry" Type="DateTime" />
+          <Property Name="isIF" Type="Boolean" />
+          <Property Name="bill_last_bill_id" Type="Int32" />
+          <Property Name="bill_volume" Type="Int32" />
+          <Property Name="bill_delivery_date" Type="DateTime" />
+          <Property Name="IFAmount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="IFPayableMonths" Type="Int32" />
+          <Property Name="IFBalance" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="IFCurrentPayMonth" Type="Int32" />
+          <Property Name="IFMonthlyPay" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="bill_current" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="bill_reading_period" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="bill_balance" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="bill_arrears" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="arrears_curr_yr" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="arrears_prev_yrs" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="master_id" Type="Int32" Nullable="false" />
+          <Property Name="masteracct_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IFDownpayment" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="isMtrDmg" Type="Boolean" />
+          <Property Name="MtrDmg_Amount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_Balance" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_Monthly" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_MonthsPayable" Type="Int16" />
+          <Property Name="MtrDmg_Downpayment" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="bill_arrears_months" Type="Int16" />
+          <Property Name="rdg_prev" Type="Int32" />
+          <Property Name="rdg_pres" Type="Int32" />
+          <Property Name="ave_vol" Type="Int32" />
+          <Property Name="IFArrears" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="MtrDmg_Arrears" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="penalty" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="senior_amt" Type="Decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbMasterAging">
+          <Key>
+            <PropertyRef Name="aging_id" />
+          </Key>
+          <Property Name="aging_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="balance" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="day1to60" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="day61to180" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="day181to365" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="over365" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="day0" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="zone_id" Type="Int32" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="date_generated" Type="DateTime" />
+          <Property Name="ctgy" Type="Int32" />
+          <Property Name="billing_id" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbMeterReader">
+          <Key>
+            <PropertyRef Name="mr_id" />
+          </Key>
+          <Property Name="mr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="mr_name" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="mr_control" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="initials" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbMeter">
+          <Key>
+            <PropertyRef Name="meter_id" />
+          </Key>
+          <Property Name="meter_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="meterno" Type="String" Nullable="false" MaxLength="18" Unicode="false" FixedLength="true" />
+          <Property Name="brand" Type="String" MaxLength="18" Unicode="false" FixedLength="true" />
+          <Property Name="dia_size" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="prev_meter" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="date_installed" Type="DateTime" />
+          <Property Name="remarks" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbMrsDownload">
+          <Key>
+            <PropertyRef Name="mrsdown_ID" />
+          </Key>
+          <Property Name="md_ave" Type="Int32" />
+          <Property Name="md_status" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="md_acctno" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="md_zone" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="md_senior" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="md_ledgrp" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="md_name" Type="String" MaxLength="40" Unicode="false" FixedLength="true" />
+          <Property Name="md_address" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="md_metno" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+          <Property Name="md_ctgry" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="md_cardno" Type="Int32" />
+          <Property Name="md_mon_arr" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_crrent" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_days30" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_days60" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_days90" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_arrears" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="md_penalty" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_metdep" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_dam_met" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_others" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_instfee" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="md_datepres" Type="DateTime" />
+          <Property Name="md_dateprev" Type="DateTime" />
+          <Property Name="md_duedate" Type="DateTime" />
+          <Property Name="md_discdate" Type="DateTime" />
+          <Property Name="md_presrdg" Type="Int32" />
+          <Property Name="md_prevrdg" Type="Int32" />
+          <Property Name="md_volume" Type="Int32" />
+          <Property Name="md_remark" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="md_ref" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="md_collagents" Type="String" MaxLength="75" Unicode="false" FixedLength="true" />
+          <Property Name="mrsdown_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="md_masterID" Type="Int32" />
+          <Property Name="md_duedateAgents" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbMRSDownloadHistory">
+          <Key>
+            <PropertyRef Name="dl_historyID" />
+          </Key>
+          <Property Name="dl_historyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dl_date" Type="DateTime" />
+          <Property Name="dl_billmonth" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="dl_zonebook" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="dl_doneby" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="dl_numrecords" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbMrsUpload">
+          <Key>
+            <PropertyRef Name="mrsUP_ID" />
+          </Key>
+          <Property Name="md_billmonth" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="md_billno" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_acctno" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="md_zone" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="md_ctgry" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_prevrdg" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_presrdg" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_volume" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_billamount" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_readtime" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_ffcode" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_mccode" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_remark" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_encoder" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="md_dateuploaded" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="mrsUP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="md_masterID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbMrsUploadEdit">
+          <Key>
+            <PropertyRef Name="editUpload_id" />
+          </Key>
+          <Property Name="editUpload_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="editReason" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="editBy" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="old_refnum" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="old_presrdg" Type="Int32" />
+          <Property Name="old_prevrdg" Type="Int32" />
+          <Property Name="old_volume" Type="Int32" />
+          <Property Name="edit_date" Type="DateTime" />
+          <Property Name="old_amount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="old_datepres" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbMRSUploadHistory">
+          <Key>
+            <PropertyRef Name="up_historyID" />
+          </Key>
+          <Property Name="up_historyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="up_date" Type="DateTime" />
+          <Property Name="up_billmonth" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="up_zonebook" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="up_doneby" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="up_numrecords" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbPay">
+          <Key>
+            <PropertyRef Name="pay_id" />
+          </Key>
+          <Property Name="pay_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="zone_id" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="yrmon" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="status" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="source" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="ledgrp" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="acctno" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="date" Type="DateTime" />
+          <Property Name="ref" Type="Int32" />
+          <Property Name="checkno" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="mode" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="collected" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="current" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="penalty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ar_curr" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ar_pri" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="metdep" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="mtrmain" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="dmgmtr" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="instfee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="svfee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="tffee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="royalty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="sdrcode" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="sdramt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="encoder" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="remarks" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="tendered_amt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="change_due" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="time_pay" Type="DateTime" />
+          <Property Name="senior" Type="Decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbPaySDR">
+          <Key>
+            <PropertyRef Name="SDRdetails_ID" />
+          </Key>
+          <Property Name="SDRdetails_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="payID" Type="Int32" />
+          <Property Name="encoder" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="trans_date" Type="DateTime" />
+          <Property Name="sdr_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="sdr_amount" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="tbPenaltyHistory">
+          <Key>
+            <PropertyRef Name="penalty_id" />
+          </Key>
+          <Property Name="penalty_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="billmonth" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="zone" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="date_generated" Type="DateTime" />
+          <Property Name="due_date" Type="DateTime" />
+          <Property Name="done_by" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="total_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="record_count" Type="Int32" />
+          <Property Name="government_only" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbPrepareAcctHistory">
+          <Key>
+            <PropertyRef Name="process_id" />
+          </Key>
+          <Property Name="process_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="prepare_billing_of" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="date_process" Type="DateTime" />
+          <Property Name="done_by" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="numrecords" Type="Int32" />
+          <Property Name="disco_processed" Type="Int32" />
+          <Property Name="disco_marked" Type="Int32" />
+          <Property Name="disco_reconnected" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbPrintTemp">
+          <Key>
+            <PropertyRef Name="row_id" />
+          </Key>
+          <Property Name="row_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="print_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="col_string1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="col_string2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="col_string3" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="col_string4" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="col_string5" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="col_decimal1" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_decimal2" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_decimal3" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_decimal4" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_decimal5" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="col_int1" Type="Int32" />
+          <Property Name="col_int2" Type="Int32" />
+          <Property Name="col_int3" Type="Int32" />
+          <Property Name="col_int4" Type="Int32" />
+          <Property Name="col_int5" Type="Int32" />
+          <Property Name="col_uid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbRate">
+          <Key>
+            <PropertyRef Name="rate_id" />
+          </Key>
+          <Property Name="rate_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="category_code" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="rate_code" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="size" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="min_vol" Type="Int32" />
+          <Property Name="max_vol" Type="Int32" />
+          <Property Name="minimum_pay" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="r11_20" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="r21_30" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="r31_40" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="r41_50" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="r51_up" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="mrental" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="tbRecapSale">
+          <Key>
+            <PropertyRef Name="recap_id" />
+          </Key>
+          <Property Name="recap_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="billmonth" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="zonebook" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="category" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="vol_ctgr" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="num_con" Type="Int32" />
+          <Property Name="total_vol" Type="Int32" />
+          <Property Name="total_amt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="code" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbSDRLookup">
+          <Key>
+            <PropertyRef Name="sdr_id" />
+          </Key>
+          <Property Name="sdr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sdr_code" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="sdr_desc" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbSeniorHistory">
+          <Key>
+            <PropertyRef Name="seniorhistory_id" />
+          </Key>
+          <Property Name="seniorhistory_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="reg_date" Type="DateTime" />
+          <Property Name="exp_date" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbSeriesNo">
+          <Key>
+            <PropertyRef Name="series_id" />
+          </Key>
+          <Property Name="series_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="form_name" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="series_num" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbServiceRequest">
+          <Key>
+            <PropertyRef Name="sr_id" />
+          </Key>
+          <Property Name="sr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sr_no" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="billdetails_id" Type="Int32" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="complain_id" Type="Int32" />
+          <Property Name="requested_by" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="request_recd_by" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="request_recd_date" Type="DateTime" />
+          <Property Name="inspected_by" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="inspected_date" Type="DateTime" />
+          <Property Name="remarks" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="status" Type="Int16" />
+          <Property Name="encoder_id" Type="Int32" />
+          <Property Name="complain_desc" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="work_done" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="last_rdg" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="initial_rdg" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbServiceRequestCode">
+          <Key>
+            <PropertyRef Name="srcode_id" />
+          </Key>
+          <Property Name="srcode_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sr_code" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="code_desc" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbSetting">
+          <Key>
+            <PropertyRef Name="settings_id" />
+          </Key>
+          <Property Name="settings_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="senior_percentage" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="senior_volume_cap" Type="Int32" />
+          <Property Name="meter_mtn" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="penalty_percentage" Type="Int32" />
+          <Property Name="collecting_agents" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="rf_residential" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="rf_commercial" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="mrs_ipaddress" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbUser">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fullname" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="user_name" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="pass_word" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="admin" Type="Int32" />
+          <Property Name="Billing" Type="Int32" />
+          <Property Name="Cashier" Type="Int32" />
+          <Property Name="Disco" Type="Int32" />
+          <Property Name="Meter" Type="Int32" />
+          <Property Name="CSD" Type="Int32" />
+          <Property Name="last_program_used" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="last_login" Type="DateTime" />
+          <Property Name="remarks" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="initials" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="last_computer_used" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="access_code" Type="Int32" />
+          <Property Name="job_desc" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbZone">
+          <Key>
+            <PropertyRef Name="zone_id" />
+          </Key>
+          <Property Name="zone_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="location" Type="String" MaxLength="100" Unicode="false" FixedLength="true" />
+          <Property Name="mtr_reader" Type="Int32" />
+          <Property Name="bill_server" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="zone_name" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="zone_uid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbZoneLookup">
+          <Key>
+            <PropertyRef Name="zone_lookup_id" />
+          </Key>
+          <Property Name="zone_lookup_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="zone_uid" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbCommercialStoreContainer" CdmEntityContainer="dbCommercialEntities">
+          <EntitySetMapping Name="tbAgingSummaries"><EntityTypeMapping TypeName="dbCommercial.tbAgingSummary"><MappingFragment StoreEntitySet="tbAgingSummary">
+            <ScalarProperty Name="summary_id" ColumnName="summary_id" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="billmonth" ColumnName="billmonth" />
+            <ScalarProperty Name="ctgry" ColumnName="ctgry" />
+            <ScalarProperty Name="total_con" ColumnName="total_con" />
+            <ScalarProperty Name="balance" ColumnName="balance" />
+            <ScalarProperty Name="days0" ColumnName="days0" />
+            <ScalarProperty Name="days1to60" ColumnName="days1to60" />
+            <ScalarProperty Name="days61to180" ColumnName="days61to180" />
+            <ScalarProperty Name="days181to365" ColumnName="days181to365" />
+            <ScalarProperty Name="over365" ColumnName="over365" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBAMCases"><EntityTypeMapping TypeName="dbCommercial.tbBAMCas"><MappingFragment StoreEntitySet="tbBAMCases">
+            <ScalarProperty Name="bcase_id" ColumnName="bcase_id" />
+            <ScalarProperty Name="case_desc" ColumnName="case_desc" />
+            <ScalarProperty Name="case_type" ColumnName="case_type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBAMEntries"><EntityTypeMapping TypeName="dbCommercial.tbBAMEntry"><MappingFragment StoreEntitySet="tbBAMEntries">
+            <ScalarProperty Name="bamdetail_id" ColumnName="bamdetail_id" />
+            <ScalarProperty Name="bamcase_id" ColumnName="bamcase_id" />
+            <ScalarProperty Name="bamno" ColumnName="bamno" />
+            <ScalarProperty Name="bam_date" ColumnName="bam_date" />
+            <ScalarProperty Name="acctname" ColumnName="acctname" />
+            <ScalarProperty Name="acctno" ColumnName="acctno" />
+            <ScalarProperty Name="zoneno" ColumnName="zoneno" />
+            <ScalarProperty Name="cardno" ColumnName="cardno" />
+            <ScalarProperty Name="explanation" ColumnName="explanation" />
+            <ScalarProperty Name="acct_title" ColumnName="acct_title" />
+            <ScalarProperty Name="bam_type" ColumnName="bam_type" />
+            <ScalarProperty Name="debit" ColumnName="debit" />
+            <ScalarProperty Name="credit" ColumnName="credit" />
+            <ScalarProperty Name="billmonth" ColumnName="billmonth" />
+            <ScalarProperty Name="cum_as_billed" ColumnName="cum_as_billed" />
+            <ScalarProperty Name="cum_should_be" ColumnName="cum_should_be" />
+            <ScalarProperty Name="cum_adjustment" ColumnName="cum_adjustment" />
+            <ScalarProperty Name="amt_as_billed" ColumnName="amt_as_billed" />
+            <ScalarProperty Name="amt_should_be" ColumnName="amt_should_be" />
+            <ScalarProperty Name="amt_adjustment" ColumnName="amt_adjustment" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="prepared_by_id" ColumnName="prepared_by_id" />
+            <ScalarProperty Name="approved_by_id" ColumnName="approved_by_id" />
+            <ScalarProperty Name="last_reading" ColumnName="last_reading" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBAMLookups"><EntityTypeMapping TypeName="dbCommercial.tbBAMLookup"><MappingFragment StoreEntitySet="tbBAMLookup">
+            <ScalarProperty Name="bam_id" ColumnName="bam_id" />
+            <ScalarProperty Name="bam_desc" ColumnName="bam_desc" />
+            <ScalarProperty Name="bam_type" ColumnName="bam_type" />
+            <ScalarProperty Name="bam_code" ColumnName="bam_code" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBankCodes"><EntityTypeMapping TypeName="dbCommercial.tbBankCode"><MappingFragment StoreEntitySet="tbBankCodes">
+            <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+            <ScalarProperty Name="bank_code" ColumnName="bank_code" />
+            <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBankCollections"><EntityTypeMapping TypeName="dbCommercial.tbBankCollection"><MappingFragment StoreEntitySet="tbBankCollections">
+            <ScalarProperty Name="collect_id" ColumnName="collect_id" />
+            <ScalarProperty Name="refnum" ColumnName="refnum" />
+            <ScalarProperty Name="zone" ColumnName="zone" />
+            <ScalarProperty Name="current" ColumnName="current" />
+            <ScalarProperty Name="arrears" ColumnName="arrears" />
+            <ScalarProperty Name="others" ColumnName="others" />
+            <ScalarProperty Name="senior" ColumnName="senior" />
+            <ScalarProperty Name="date_posted" ColumnName="date_posted" />
+            <ScalarProperty Name="date_collected" ColumnName="date_collected" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="posted_by" ColumnName="posted_by" />
+            <ScalarProperty Name="collect_agent" ColumnName="collect_agent" />
+            <ScalarProperty Name="totalamt" ColumnName="totalamt" />
+            <ScalarProperty Name="billmonth" ColumnName="billmonth" />
+            <ScalarProperty Name="mtr_mtn" ColumnName="mtr_mtn" />
+            <ScalarProperty Name="dmg_mtr" ColumnName="dmg_mtr" />
+            <ScalarProperty Name="updated" ColumnName="updated" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillings"><EntityTypeMapping TypeName="dbCommercial.tbBilling"><MappingFragment StoreEntitySet="tbBilling">
+            <ScalarProperty Name="billing_id" ColumnName="billing_id" />
+            <ScalarProperty Name="billing_desc" ColumnName="billing_desc" />
+            <ScalarProperty Name="billing_start" ColumnName="billing_start" />
+            <ScalarProperty Name="billing_end" ColumnName="billing_end" />
+            <ScalarProperty Name="num_of_bills_processed" ColumnName="num_of_bills_processed" />
+            <ScalarProperty Name="num_of_bills_arrears" ColumnName="num_of_bills_arrears" />
+            <ScalarProperty Name="total_bill_amount" ColumnName="total_bill_amount" />
+            <ScalarProperty Name="total_arrears_amount" ColumnName="total_arrears_amount" />
+            <ScalarProperty Name="total_days" ColumnName="total_days" />
+            <ScalarProperty Name="loaded_to_zones" ColumnName="loaded_to_zones" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="processed_date" ColumnName="processed_date" />
+            <ScalarProperty Name="processed_by" ColumnName="processed_by" />
+            <ScalarProperty Name="print_counter" ColumnName="print_counter" />
+            <ScalarProperty Name="last_printdate" ColumnName="last_printdate" />
+            <ScalarProperty Name="last_printby" ColumnName="last_printby" />
+            <ScalarProperty Name="checked_date" ColumnName="checked_date" />
+            <ScalarProperty Name="checked_by" ColumnName="checked_by" />
+            <ScalarProperty Name="posted_date" ColumnName="posted_date" />
+            <ScalarProperty Name="posted_by" ColumnName="posted_by" />
+            <ScalarProperty Name="bill_month" ColumnName="bill_month" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillingCollections"><EntityTypeMapping TypeName="dbCommercial.tbBillingCollection"><MappingFragment StoreEntitySet="tbBillingCollection">
+            <ScalarProperty Name="billcol_id" ColumnName="billcol_id" />
+            <ScalarProperty Name="date_trans" ColumnName="date_trans" />
+            <ScalarProperty Name="zone" ColumnName="zone" />
+            <ScalarProperty Name="bill_amount" ColumnName="bill_amount" />
+            <ScalarProperty Name="bill_penalty" ColumnName="bill_penalty" />
+            <ScalarProperty Name="bill_mtrmtn" ColumnName="bill_mtrmtn" />
+            <ScalarProperty Name="bill_cum" ColumnName="bill_cum" />
+            <ScalarProperty Name="bill_scno" ColumnName="bill_scno" />
+            <ScalarProperty Name="bam_amount" ColumnName="bam_amount" />
+            <ScalarProperty Name="bam_cum" ColumnName="bam_cum" />
+            <ScalarProperty Name="bam_scno" ColumnName="bam_scno" />
+            <ScalarProperty Name="col_amount" ColumnName="col_amount" />
+            <ScalarProperty Name="col_penalty" ColumnName="col_penalty" />
+            <ScalarProperty Name="col_mtrmtn" ColumnName="col_mtrmtn" />
+            <ScalarProperty Name="col_scno" ColumnName="col_scno" />
+            <ScalarProperty Name="date_generated" ColumnName="date_generated" />
+            <ScalarProperty Name="generated_by" ColumnName="generated_by" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillingDeletes"><EntityTypeMapping TypeName="dbCommercial.tbBillingDelete"><MappingFragment StoreEntitySet="tbBillingDelete">
+            <ScalarProperty Name="billdelete_id" ColumnName="billdelete_id" />
+            <ScalarProperty Name="billproc_id" ColumnName="billproc_id" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="date_deleted" ColumnName="date_deleted" />
+            <ScalarProperty Name="rdg_prev" ColumnName="rdg_prev" />
+            <ScalarProperty Name="rdg_pres" ColumnName="rdg_pres" />
+            <ScalarProperty Name="volume" ColumnName="volume" />
+            <ScalarProperty Name="deleted_by" ColumnName="deleted_by" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillingDetails"><EntityTypeMapping TypeName="dbCommercial.tbBillingDetail"><MappingFragment StoreEntitySet="tbBillingDetails">
+            <ScalarProperty Name="billingdetails_id" ColumnName="billingdetails_id" />
+            <ScalarProperty Name="mrs_ref" ColumnName="mrs_ref" />
+            <ScalarProperty Name="ave_vol" ColumnName="ave_vol" />
+            <ScalarProperty Name="current" ColumnName="current" />
+            <ScalarProperty Name="date_pres" ColumnName="date_pres" />
+            <ScalarProperty Name="date_prev" ColumnName="date_prev" />
+            <ScalarProperty Name="volume" ColumnName="volume" />
+            <ScalarProperty Name="penalty" ColumnName="penalty" />
+            <ScalarProperty Name="mtr_mtn" ColumnName="mtr_mtn" />
+            <ScalarProperty Name="rdg_pres" ColumnName="rdg_pres" />
+            <ScalarProperty Name="rdg_prev" ColumnName="rdg_prev" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="billproc_id" ColumnName="billproc_id" />
+            <ScalarProperty Name="readtime" ColumnName="readtime" />
+            <ScalarProperty Name="arrears" ColumnName="arrears" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="sr_id" ColumnName="sr_id" />
+            <ScalarProperty Name="senior" ColumnName="senior" />
+            <ScalarProperty Name="inst_fee" ColumnName="inst_fee" />
+            <ScalarProperty Name="mtr_dmg" ColumnName="mtr_dmg" />
+            <ScalarProperty Name="bill_ref_num" ColumnName="bill_ref_num" />
+            <ScalarProperty Name="mtr_read_by" ColumnName="mtr_read_by" />
+            <ScalarProperty Name="read_edit_by" ColumnName="read_edit_by" />
+            <ScalarProperty Name="other_fees" ColumnName="other_fees" />
+            <ScalarProperty Name="other_fee_code" ColumnName="other_fee_code" />
+            <ScalarProperty Name="arrears_month" ColumnName="arrears_month" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillingSchedules"><EntityTypeMapping TypeName="dbCommercial.tbBillingSchedule"><MappingFragment StoreEntitySet="tbBillingSchedule">
+            <ScalarProperty Name="billing_sched_id" ColumnName="billing_sched_id" />
+            <ScalarProperty Name="date_rdg" ColumnName="date_rdg" />
+            <ScalarProperty Name="date_bill_start" ColumnName="date_bill_start" />
+            <ScalarProperty Name="date_bill_end" ColumnName="date_bill_end" />
+            <ScalarProperty Name="date_processed" ColumnName="date_processed" />
+            <ScalarProperty Name="date_bill_serve" ColumnName="date_bill_serve" />
+            <ScalarProperty Name="date_due_disco_arrears" ColumnName="date_due_disco_arrears" />
+            <ScalarProperty Name="date_due_disco_noarrears" ColumnName="date_due_disco_noarrears" />
+            <ScalarProperty Name="date_due_office" ColumnName="date_due_office" />
+            <ScalarProperty Name="date_due_bank" ColumnName="date_due_bank" />
+            <ScalarProperty Name="date_gen_penalty" ColumnName="date_gen_penalty" />
+            <ScalarProperty Name="date_download_agents" ColumnName="date_download_agents" />
+            <ScalarProperty Name="date_to_update_billing" ColumnName="date_to_update_billing" />
+            <ScalarProperty Name="billing_id" ColumnName="billing_id" />
+            <ScalarProperty Name="zone" ColumnName="zone" />
+            <ScalarProperty Name="processed_by" ColumnName="processed_by" />
+            <ScalarProperty Name="date_checked" ColumnName="date_checked" />
+            <ScalarProperty Name="checked_by" ColumnName="checked_by" />
+            <ScalarProperty Name="date_bill_printed" ColumnName="date_bill_printed" />
+            <ScalarProperty Name="bill_printed_by" ColumnName="bill_printed_by" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillingSummaries"><EntityTypeMapping TypeName="dbCommercial.tbBillingSummary"><MappingFragment StoreEntitySet="tbBillingSummary">
+            <ScalarProperty Name="summary_id" ColumnName="summary_id" />
+            <ScalarProperty Name="zone" ColumnName="zone" />
+            <ScalarProperty Name="cum" ColumnName="cum" />
+            <ScalarProperty Name="billed" ColumnName="billed" />
+            <ScalarProperty Name="ar" ColumnName="ar" />
+            <ScalarProperty Name="sales" ColumnName="sales" />
+            <ScalarProperty Name="penalty" ColumnName="penalty" />
+            <ScalarProperty Name="billmonth" ColumnName="billmonth" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillPrinteds"><EntityTypeMapping TypeName="dbCommercial.tbBillPrinted"><MappingFragment StoreEntitySet="tbBillPrinted">
+            <ScalarProperty Name="billprint_id" ColumnName="billprint_id" />
+            <ScalarProperty Name="bill_month" ColumnName="bill_month" />
+            <ScalarProperty Name="acctno" ColumnName="acctno" />
+            <ScalarProperty Name="meter_no" ColumnName="meter_no" />
+            <ScalarProperty Name="fullname" ColumnName="fullname" />
+            <ScalarProperty Name="address" ColumnName="address" />
+            <ScalarProperty Name="from_to" ColumnName="from_to" />
+            <ScalarProperty Name="rdg_pres" ColumnName="rdg_pres" />
+            <ScalarProperty Name="rdg_prev" ColumnName="rdg_prev" />
+            <ScalarProperty Name="volume" ColumnName="volume" />
+            <ScalarProperty Name="current" ColumnName="current" />
+            <ScalarProperty Name="mtr_mtn" ColumnName="mtr_mtn" />
+            <ScalarProperty Name="arrears" ColumnName="arrears" />
+            <ScalarProperty Name="dmg_mtr" ColumnName="dmg_mtr" />
+            <ScalarProperty Name="senior" ColumnName="senior" />
+            <ScalarProperty Name="if2" ColumnName="if2" />
+            <ScalarProperty Name="total" ColumnName="total" />
+            <ScalarProperty Name="duedate_bank" ColumnName="duedate_bank" />
+            <ScalarProperty Name="duedate_surcharge" ColumnName="duedate_surcharge" />
+            <ScalarProperty Name="surcharge" ColumnName="surcharge" />
+            <ScalarProperty Name="total_w_surcharge" ColumnName="total_w_surcharge" />
+            <ScalarProperty Name="bill_ref_no" ColumnName="bill_ref_no" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="billing_id" ColumnName="billing_id" />
+            <ScalarProperty Name="date_disco" ColumnName="date_disco" />
+            <ScalarProperty Name="card_no" ColumnName="card_no" />
+            <ScalarProperty Name="class_type" ColumnName="class_type" />
+            <ScalarProperty Name="zone_book" ColumnName="zone_book" />
+            <ScalarProperty Name="uid" ColumnName="uid" />
+            <ScalarProperty Name="date_printed" ColumnName="date_printed" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbBillProcessings"><EntityTypeMapping TypeName="dbCommercial.tbBillProcessing"><MappingFragment StoreEntitySet="tbBillProcessing">
+            <ScalarProperty Name="bill_process_id" ColumnName="bill_process_id" />
+            <ScalarProperty Name="zone_book" ColumnName="zone_book" />
+            <ScalarProperty Name="meter_reader" ColumnName="meter_reader" />
+            <ScalarProperty Name="mrs_controls" ColumnName="mrs_controls" />
+            <ScalarProperty Name="date_processed" ColumnName="date_processed" />
+            <ScalarProperty Name="processed_by" ColumnName="processed_by" />
+            <ScalarProperty Name="date_checked" ColumnName="date_checked" />
+            <ScalarProperty Name="checked_by" ColumnName="checked_by" />
+            <ScalarProperty Name="date_printed" ColumnName="date_printed" />
+            <ScalarProperty Name="printed_by" ColumnName="printed_by" />
+            <ScalarProperty Name="billing_id" ColumnName="billing_id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbDailyARCustomers"><EntityTypeMapping TypeName="dbCommercial.tbDailyARCustomer"><MappingFragment StoreEntitySet="tbDailyARCustomer">
+            <ScalarProperty Name="arcol_id" ColumnName="arcol_id" />
+            <ScalarProperty Name="date_trans" ColumnName="date_trans" />
+            <ScalarProperty Name="zone" ColumnName="zone" />
+            <ScalarProperty Name="col_amount" ColumnName="col_amount" />
+            <ScalarProperty Name="col_penalty" ColumnName="col_penalty" />
+            <ScalarProperty Name="col_mtrmtn" ColumnName="col_mtrmtn" />
+            <ScalarProperty Name="col_scno" ColumnName="col_scno" />
+            <ScalarProperty Name="col_sundries" ColumnName="col_sundries" />
+            <ScalarProperty Name="col_arrears_curr" ColumnName="col_arrears_curr" />
+            <ScalarProperty Name="col_arrears_prior" ColumnName="col_arrears_prior" />
+            <ScalarProperty Name="col_instfee" ColumnName="col_instfee" />
+            <ScalarProperty Name="col_reconfee" ColumnName="col_reconfee" />
+            <ScalarProperty Name="col_transfee" ColumnName="col_transfee" />
+            <ScalarProperty Name="col_dmgmtr" ColumnName="col_dmgmtr" />
+            <ScalarProperty Name="date_generated" ColumnName="date_generated" />
+            <ScalarProperty Name="generated_by" ColumnName="generated_by" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbDailySummaries"><EntityTypeMapping TypeName="dbCommercial.tbDailySummary"><MappingFragment StoreEntitySet="tbDailySummary">
+            <ScalarProperty Name="summary_id" ColumnName="summary_id" />
+            <ScalarProperty Name="trans_date" ColumnName="trans_date" />
+            <ScalarProperty Name="done_by" ColumnName="done_by" />
+            <ScalarProperty Name="collections_office_sales" ColumnName="collections_office_sales" />
+            <ScalarProperty Name="collections_office_others" ColumnName="collections_office_others" />
+            <ScalarProperty Name="collections_bank" ColumnName="collections_bank" />
+            <ScalarProperty Name="balance_master" ColumnName="balance_master" />
+            <ScalarProperty Name="balance_instfee" ColumnName="balance_instfee" />
+            <ScalarProperty Name="new_accounts" ColumnName="new_accounts" />
+            <ScalarProperty Name="bam_amt_debit" ColumnName="bam_amt_debit" />
+            <ScalarProperty Name="bam_count_debit" ColumnName="bam_count_debit" />
+            <ScalarProperty Name="bills_uploaded" ColumnName="bills_uploaded" />
+            <ScalarProperty Name="bills_amount" ColumnName="bills_amount" />
+            <ScalarProperty Name="bam_amt_credit" ColumnName="bam_amt_credit" />
+            <ScalarProperty Name="bam_count_credit" ColumnName="bam_count_credit" />
+            <ScalarProperty Name="penalty_amt" ColumnName="penalty_amt" />
+            <ScalarProperty Name="penalty_count" ColumnName="penalty_count" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbDeptDivisionHeads"><EntityTypeMapping TypeName="dbCommercial.tbDeptDivisionHead"><MappingFragment StoreEntitySet="tbDeptDivisionHeads">
+            <ScalarProperty Name="head_id" ColumnName="head_id" />
+            <ScalarProperty Name="DeptDiv" ColumnName="DeptDiv" />
+            <ScalarProperty Name="DeptDivHead" ColumnName="DeptDivHead" />
+            <ScalarProperty Name="user_id" ColumnName="user_id" />
+            <ScalarProperty Name="designation" ColumnName="designation" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbDiscoEntries"><EntityTypeMapping TypeName="dbCommercial.tbDiscoEntry"><MappingFragment StoreEntitySet="tbDiscoEntry">
+            <ScalarProperty Name="disco_id" ColumnName="disco_id" />
+            <ScalarProperty Name="disco_date" ColumnName="disco_date" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="processed" ColumnName="processed" />
+            <ScalarProperty Name="zoneid" ColumnName="zoneid" />
+            <ScalarProperty Name="entry_date" ColumnName="entry_date" />
+            <ScalarProperty Name="entry_by" ColumnName="entry_by" />
+            <ScalarProperty Name="processed_date" ColumnName="processed_date" />
+            <ScalarProperty Name="processed_by" ColumnName="processed_by" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbDMALists"><EntityTypeMapping TypeName="dbCommercial.tbDMAList"><MappingFragment StoreEntitySet="tbDMAList">
+            <ScalarProperty Name="dma_id" ColumnName="dma_id" />
+            <ScalarProperty Name="subd_name" ColumnName="subd_name" />
+            <ScalarProperty Name="search_str" ColumnName="search_str" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbDownloadAgentsHistories"><EntityTypeMapping TypeName="dbCommercial.tbDownloadAgentsHistory"><MappingFragment StoreEntitySet="tbDownloadAgentsHistory">
+            <ScalarProperty Name="dlagent_id" ColumnName="dlagent_id" />
+            <ScalarProperty Name="dlagent_date" ColumnName="dlagent_date" />
+            <ScalarProperty Name="zonebook" ColumnName="zonebook" />
+            <ScalarProperty Name="billmonth" ColumnName="billmonth" />
+            <ScalarProperty Name="downloadby" ColumnName="downloadby" />
+            <ScalarProperty Name="numrec" ColumnName="numrec" />
+            <ScalarProperty Name="agent_name" ColumnName="agent_name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbLedgers"><EntityTypeMapping TypeName="dbCommercial.tbLedger"><MappingFragment StoreEntitySet="tbLedger">
+            <ScalarProperty Name="ledger_id" ColumnName="ledger_id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="ref" ColumnName="ref" />
+            <ScalarProperty Name="presrdg" ColumnName="presrdg" />
+            <ScalarProperty Name="trans_date" ColumnName="trans_date" />
+            <ScalarProperty Name="volume" ColumnName="volume" />
+            <ScalarProperty Name="symbol" ColumnName="symbol" />
+            <ScalarProperty Name="encoder" ColumnName="encoder" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="remarks_date" ColumnName="remarks_date" />
+            <ScalarProperty Name="remarks_by" ColumnName="remarks_by" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="billing_id" ColumnName="billing_id" />
+            <ScalarProperty Name="amount" ColumnName="amount" />
+            <ScalarProperty Name="balance" ColumnName="balance" />
+            <ScalarProperty Name="other" ColumnName="other" />
+            <ScalarProperty Name="zoneuid" ColumnName="zoneuid" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMaintenanceOrders"><EntityTypeMapping TypeName="dbCommercial.tbMaintenanceOrder"><MappingFragment StoreEntitySet="tbMaintenanceOrder">
+            <ScalarProperty Name="morder_id" ColumnName="morder_id" />
+            <ScalarProperty Name="acctno" ColumnName="acctno" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="trans_date" ColumnName="trans_date" />
+            <ScalarProperty Name="time_paid" ColumnName="time_paid" />
+            <ScalarProperty Name="or_num" ColumnName="or_num" />
+            <ScalarProperty Name="totalamt_paid" ColumnName="totalamt_paid" />
+            <ScalarProperty Name="date_disco" ColumnName="date_disco" />
+            <ScalarProperty Name="date_reco" ColumnName="date_reco" />
+            <ScalarProperty Name="reco_by" ColumnName="reco_by" />
+            <ScalarProperty Name="prepared_by" ColumnName="prepared_by" />
+            <ScalarProperty Name="mtr_no_installed" ColumnName="mtr_no_installed" />
+            <ScalarProperty Name="mtr_reading" ColumnName="mtr_reading" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="rfeeamt_paid" ColumnName="rfeeamt_paid" />
+            <ScalarProperty Name="category" ColumnName="category" />
+            <ScalarProperty Name="dateprinted" ColumnName="dateprinted" />
+            <ScalarProperty Name="meterno" ColumnName="meterno" />
+            <ScalarProperty Name="work_desc" ColumnName="work_desc" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMasters"><EntityTypeMapping TypeName="dbCommercial.tbMaster"><MappingFragment StoreEntitySet="tbMaster">
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="acctno" ColumnName="acctno" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="address" ColumnName="address" />
+            <ScalarProperty Name="category" ColumnName="category" />
+            <ScalarProperty Name="cardno" ColumnName="cardno" />
+            <ScalarProperty Name="date_installed" ColumnName="date_installed" />
+            <ScalarProperty Name="date_encoded" ColumnName="date_encoded" />
+            <ScalarProperty Name="encoded_by" ColumnName="encoded_by" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="last_edit_by" ColumnName="last_edit_by" />
+            <ScalarProperty Name="last_edit_date" ColumnName="last_edit_date" />
+            <ScalarProperty Name="last_disco_date" ColumnName="last_disco_date" />
+            <ScalarProperty Name="last_reco_date" ColumnName="last_reco_date" />
+            <ScalarProperty Name="remarks_date" ColumnName="remarks_date" />
+            <ScalarProperty Name="remarks_by" ColumnName="remarks_by" />
+            <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+            <ScalarProperty Name="meter_id" ColumnName="meter_id" />
+            <ScalarProperty Name="tin_no" ColumnName="tin_no" />
+            <ScalarProperty Name="senior_id" ColumnName="senior_id" />
+            <ScalarProperty Name="last_read_date" ColumnName="last_read_date" />
+            <ScalarProperty Name="prev_read_date" ColumnName="prev_read_date" />
+            <ScalarProperty Name="gps_data" ColumnName="gps_data" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMasterAccts"><EntityTypeMapping TypeName="dbCommercial.tbMasterAcct"><MappingFragment StoreEntitySet="tbMasterAccts">
+            <ScalarProperty Name="isSenior" ColumnName="isSenior" />
+            <ScalarProperty Name="senior_expiry" ColumnName="senior_expiry" />
+            <ScalarProperty Name="isIF" ColumnName="isIF" />
+            <ScalarProperty Name="bill_last_bill_id" ColumnName="bill_last_bill_id" />
+            <ScalarProperty Name="bill_volume" ColumnName="bill_volume" />
+            <ScalarProperty Name="bill_delivery_date" ColumnName="bill_delivery_date" />
+            <ScalarProperty Name="IFAmount" ColumnName="IFAmount" />
+            <ScalarProperty Name="IFPayableMonths" ColumnName="IFPayableMonths" />
+            <ScalarProperty Name="IFBalance" ColumnName="IFBalance" />
+            <ScalarProperty Name="IFCurrentPayMonth" ColumnName="IFCurrentPayMonth" />
+            <ScalarProperty Name="IFMonthlyPay" ColumnName="IFMonthlyPay" />
+            <ScalarProperty Name="bill_current" ColumnName="bill_current" />
+            <ScalarProperty Name="bill_reading_period" ColumnName="bill_reading_period" />
+            <ScalarProperty Name="bill_balance" ColumnName="bill_balance" />
+            <ScalarProperty Name="bill_arrears" ColumnName="bill_arrears" />
+            <ScalarProperty Name="arrears_curr_yr" ColumnName="arrears_curr_yr" />
+            <ScalarProperty Name="arrears_prev_yrs" ColumnName="arrears_prev_yrs" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="masteracct_id" ColumnName="masteracct_id" />
+            <ScalarProperty Name="IFDownpayment" ColumnName="IFDownpayment" />
+            <ScalarProperty Name="isMtrDmg" ColumnName="isMtrDmg" />
+            <ScalarProperty Name="MtrDmg_Amount" ColumnName="MtrDmg_Amount" />
+            <ScalarProperty Name="MtrDmg_Balance" ColumnName="MtrDmg_Balance" />
+            <ScalarProperty Name="MtrDmg_Monthly" ColumnName="MtrDmg_Monthly" />
+            <ScalarProperty Name="MtrDmg_MonthsPayable" ColumnName="MtrDmg_MonthsPayable" />
+            <ScalarProperty Name="MtrDmg_Downpayment" ColumnName="MtrDmg_Downpayment" />
+            <ScalarProperty Name="bill_arrears_months" ColumnName="bill_arrears_months" />
+            <ScalarProperty Name="rdg_prev" ColumnName="rdg_prev" />
+            <ScalarProperty Name="rdg_pres" ColumnName="rdg_pres" />
+            <ScalarProperty Name="ave_vol" ColumnName="ave_vol" />
+            <ScalarProperty Name="IFArrears" ColumnName="IFArrears" />
+            <ScalarProperty Name="MtrDmg_Arrears" ColumnName="MtrDmg_Arrears" />
+            <ScalarProperty Name="penalty" ColumnName="penalty" />
+            <ScalarProperty Name="senior_amt" ColumnName="senior_amt" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMasterAgings"><EntityTypeMapping TypeName="dbCommercial.tbMasterAging"><MappingFragment StoreEntitySet="tbMasterAging">
+            <ScalarProperty Name="aging_id" ColumnName="aging_id" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="balance" ColumnName="balance" />
+            <ScalarProperty Name="day1to60" ColumnName="day1to60" />
+            <ScalarProperty Name="day61to180" ColumnName="day61to180" />
+            <ScalarProperty Name="day181to365" ColumnName="day181to365" />
+            <ScalarProperty Name="over365" ColumnName="over365" />
+            <ScalarProperty Name="day0" ColumnName="day0" />
+            <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="date_generated" ColumnName="date_generated" />
+            <ScalarProperty Name="ctgy" ColumnName="ctgy" />
+            <ScalarProperty Name="billing_id" ColumnName="billing_id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMeterReaders"><EntityTypeMapping TypeName="dbCommercial.tbMeterReader"><MappingFragment StoreEntitySet="tbMeterReader">
+            <ScalarProperty Name="mr_id" ColumnName="mr_id" />
+            <ScalarProperty Name="mr_name" ColumnName="mr_name" />
+            <ScalarProperty Name="mr_control" ColumnName="mr_control" />
+            <ScalarProperty Name="initials" ColumnName="initials" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMeters"><EntityTypeMapping TypeName="dbCommercial.tbMeter"><MappingFragment StoreEntitySet="tbMeters">
+            <ScalarProperty Name="meter_id" ColumnName="meter_id" />
+            <ScalarProperty Name="meterno" ColumnName="meterno" />
+            <ScalarProperty Name="brand" ColumnName="brand" />
+            <ScalarProperty Name="dia_size" ColumnName="dia_size" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="prev_meter" ColumnName="prev_meter" />
+            <ScalarProperty Name="date_installed" ColumnName="date_installed" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMrsDownloads"><EntityTypeMapping TypeName="dbCommercial.tbMrsDownload"><MappingFragment StoreEntitySet="tbMrsDownload">
+            <ScalarProperty Name="md_ave" ColumnName="md_ave" />
+            <ScalarProperty Name="md_status" ColumnName="md_status" />
+            <ScalarProperty Name="md_acctno" ColumnName="md_acctno" />
+            <ScalarProperty Name="md_zone" ColumnName="md_zone" />
+            <ScalarProperty Name="md_senior" ColumnName="md_senior" />
+            <ScalarProperty Name="md_ledgrp" ColumnName="md_ledgrp" />
+            <ScalarProperty Name="md_name" ColumnName="md_name" />
+            <ScalarProperty Name="md_address" ColumnName="md_address" />
+            <ScalarProperty Name="md_metno" ColumnName="md_metno" />
+            <ScalarProperty Name="md_ctgry" ColumnName="md_ctgry" />
+            <ScalarProperty Name="md_cardno" ColumnName="md_cardno" />
+            <ScalarProperty Name="md_mon_arr" ColumnName="md_mon_arr" />
+            <ScalarProperty Name="md_crrent" ColumnName="md_crrent" />
+            <ScalarProperty Name="md_days30" ColumnName="md_days30" />
+            <ScalarProperty Name="md_days60" ColumnName="md_days60" />
+            <ScalarProperty Name="md_days90" ColumnName="md_days90" />
+            <ScalarProperty Name="md_arrears" ColumnName="md_arrears" />
+            <ScalarProperty Name="md_penalty" ColumnName="md_penalty" />
+            <ScalarProperty Name="md_metdep" ColumnName="md_metdep" />
+            <ScalarProperty Name="md_dam_met" ColumnName="md_dam_met" />
+            <ScalarProperty Name="md_others" ColumnName="md_others" />
+            <ScalarProperty Name="md_instfee" ColumnName="md_instfee" />
+            <ScalarProperty Name="md_datepres" ColumnName="md_datepres" />
+            <ScalarProperty Name="md_dateprev" ColumnName="md_dateprev" />
+            <ScalarProperty Name="md_duedate" ColumnName="md_duedate" />
+            <ScalarProperty Name="md_discdate" ColumnName="md_discdate" />
+            <ScalarProperty Name="md_presrdg" ColumnName="md_presrdg" />
+            <ScalarProperty Name="md_prevrdg" ColumnName="md_prevrdg" />
+            <ScalarProperty Name="md_volume" ColumnName="md_volume" />
+            <ScalarProperty Name="md_remark" ColumnName="md_remark" />
+            <ScalarProperty Name="md_ref" ColumnName="md_ref" />
+            <ScalarProperty Name="md_collagents" ColumnName="md_collagents" />
+            <ScalarProperty Name="mrsdown_ID" ColumnName="mrsdown_ID" />
+            <ScalarProperty Name="md_masterID" ColumnName="md_masterID" />
+            <ScalarProperty Name="md_duedateAgents" ColumnName="md_duedateAgents" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMRSDownloadHistories"><EntityTypeMapping TypeName="dbCommercial.tbMRSDownloadHistory"><MappingFragment StoreEntitySet="tbMRSDownloadHistory">
+            <ScalarProperty Name="dl_historyID" ColumnName="dl_historyID" />
+            <ScalarProperty Name="dl_date" ColumnName="dl_date" />
+            <ScalarProperty Name="dl_billmonth" ColumnName="dl_billmonth" />
+            <ScalarProperty Name="dl_zonebook" ColumnName="dl_zonebook" />
+            <ScalarProperty Name="dl_doneby" ColumnName="dl_doneby" />
+            <ScalarProperty Name="dl_numrecords" ColumnName="dl_numrecords" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMrsUploads"><EntityTypeMapping TypeName="dbCommercial.tbMrsUpload"><MappingFragment StoreEntitySet="tbMrsUpload">
+            <ScalarProperty Name="md_billmonth" ColumnName="md_billmonth" />
+            <ScalarProperty Name="md_billno" ColumnName="md_billno" />
+            <ScalarProperty Name="md_acctno" ColumnName="md_acctno" />
+            <ScalarProperty Name="md_zone" ColumnName="md_zone" />
+            <ScalarProperty Name="md_ctgry" ColumnName="md_ctgry" />
+            <ScalarProperty Name="md_prevrdg" ColumnName="md_prevrdg" />
+            <ScalarProperty Name="md_presrdg" ColumnName="md_presrdg" />
+            <ScalarProperty Name="md_volume" ColumnName="md_volume" />
+            <ScalarProperty Name="md_billamount" ColumnName="md_billamount" />
+            <ScalarProperty Name="md_readtime" ColumnName="md_readtime" />
+            <ScalarProperty Name="md_ffcode" ColumnName="md_ffcode" />
+            <ScalarProperty Name="md_mccode" ColumnName="md_mccode" />
+            <ScalarProperty Name="md_remark" ColumnName="md_remark" />
+            <ScalarProperty Name="md_encoder" ColumnName="md_encoder" />
+            <ScalarProperty Name="md_dateuploaded" ColumnName="md_dateuploaded" />
+            <ScalarProperty Name="mrsUP_ID" ColumnName="mrsUP_ID" />
+            <ScalarProperty Name="md_masterID" ColumnName="md_masterID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMrsUploadEdits"><EntityTypeMapping TypeName="dbCommercial.tbMrsUploadEdit"><MappingFragment StoreEntitySet="tbMrsUploadEdit">
+            <ScalarProperty Name="editUpload_id" ColumnName="editUpload_id" />
+            <ScalarProperty Name="editReason" ColumnName="editReason" />
+            <ScalarProperty Name="editBy" ColumnName="editBy" />
+            <ScalarProperty Name="old_refnum" ColumnName="old_refnum" />
+            <ScalarProperty Name="old_presrdg" ColumnName="old_presrdg" />
+            <ScalarProperty Name="old_prevrdg" ColumnName="old_prevrdg" />
+            <ScalarProperty Name="old_volume" ColumnName="old_volume" />
+            <ScalarProperty Name="edit_date" ColumnName="edit_date" />
+            <ScalarProperty Name="old_amount" ColumnName="old_amount" />
+            <ScalarProperty Name="old_datepres" ColumnName="old_datepres" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbMRSUploadHistories"><EntityTypeMapping TypeName="dbCommercial.tbMRSUploadHistory"><MappingFragment StoreEntitySet="tbMRSUploadHistory">
+            <ScalarProperty Name="up_historyID" ColumnName="up_historyID" />
+            <ScalarProperty Name="up_date" ColumnName="up_date" />
+            <ScalarProperty Name="up_billmonth" ColumnName="up_billmonth" />
+            <ScalarProperty Name="up_zonebook" ColumnName="up_zonebook" />
+            <ScalarProperty Name="up_doneby" ColumnName="up_doneby" />
+            <ScalarProperty Name="up_numrecords" ColumnName="up_numrecords" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbPays"><EntityTypeMapping TypeName="dbCommercial.tbPay"><MappingFragment StoreEntitySet="tbPay">
+            <ScalarProperty Name="pay_id" ColumnName="pay_id" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+            <ScalarProperty Name="yrmon" ColumnName="yrmon" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="source" ColumnName="source" />
+            <ScalarProperty Name="ledgrp" ColumnName="ledgrp" />
+            <ScalarProperty Name="acctno" ColumnName="acctno" />
+            <ScalarProperty Name="date" ColumnName="date" />
+            <ScalarProperty Name="ref" ColumnName="ref" />
+            <ScalarProperty Name="checkno" ColumnName="checkno" />
+            <ScalarProperty Name="mode" ColumnName="mode" />
+            <ScalarProperty Name="collected" ColumnName="collected" />
+            <ScalarProperty Name="current" ColumnName="current" />
+            <ScalarProperty Name="penalty" ColumnName="penalty" />
+            <ScalarProperty Name="ar_curr" ColumnName="ar_curr" />
+            <ScalarProperty Name="ar_pri" ColumnName="ar_pri" />
+            <ScalarProperty Name="metdep" ColumnName="metdep" />
+            <ScalarProperty Name="mtrmain" ColumnName="mtrmain" />
+            <ScalarProperty Name="dmgmtr" ColumnName="dmgmtr" />
+            <ScalarProperty Name="instfee" ColumnName="instfee" />
+            <ScalarProperty Name="svfee" ColumnName="svfee" />
+            <ScalarProperty Name="tffee" ColumnName="tffee" />
+            <ScalarProperty Name="royalty" ColumnName="royalty" />
+            <ScalarProperty Name="sdrcode" ColumnName="sdrcode" />
+            <ScalarProperty Name="sdramt" ColumnName="sdramt" />
+            <ScalarProperty Name="encoder" ColumnName="encoder" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="tendered_amt" ColumnName="tendered_amt" />
+            <ScalarProperty Name="change_due" ColumnName="change_due" />
+            <ScalarProperty Name="time_pay" ColumnName="time_pay" />
+            <ScalarProperty Name="senior" ColumnName="senior" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbPaySDRs"><EntityTypeMapping TypeName="dbCommercial.tbPaySDR"><MappingFragment StoreEntitySet="tbPaySDR">
+            <ScalarProperty Name="SDRdetails_ID" ColumnName="SDRdetails_ID" />
+            <ScalarProperty Name="payID" ColumnName="payID" />
+            <ScalarProperty Name="encoder" ColumnName="encoder" />
+            <ScalarProperty Name="trans_date" ColumnName="trans_date" />
+            <ScalarProperty Name="sdr_code" ColumnName="sdr_code" />
+            <ScalarProperty Name="sdr_amount" ColumnName="sdr_amount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbPenaltyHistories"><EntityTypeMapping TypeName="dbCommercial.tbPenaltyHistory"><MappingFragment StoreEntitySet="tbPenaltyHistory">
+            <ScalarProperty Name="penalty_id" ColumnName="penalty_id" />
+            <ScalarProperty Name="billmonth" ColumnName="billmonth" />
+            <ScalarProperty Name="zone" ColumnName="zone" />
+            <ScalarProperty Name="date_generated" ColumnName="date_generated" />
+            <ScalarProperty Name="due_date" ColumnName="due_date" />
+            <ScalarProperty Name="done_by" ColumnName="done_by" />
+            <ScalarProperty Name="total_amount" ColumnName="total_amount" />
+            <ScalarProperty Name="record_count" ColumnName="record_count" />
+            <ScalarProperty Name="government_only" ColumnName="government_only" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbPrepareAcctHistories"><EntityTypeMapping TypeName="dbCommercial.tbPrepareAcctHistory"><MappingFragment StoreEntitySet="tbPrepareAcctHistory">
+            <ScalarProperty Name="process_id" ColumnName="process_id" />
+            <ScalarProperty Name="prepare_billing_of" ColumnName="prepare_billing_of" />
+            <ScalarProperty Name="date_process" ColumnName="date_process" />
+            <ScalarProperty Name="done_by" ColumnName="done_by" />
+            <ScalarProperty Name="numrecords" ColumnName="numrecords" />
+            <ScalarProperty Name="disco_processed" ColumnName="disco_processed" />
+            <ScalarProperty Name="disco_marked" ColumnName="disco_marked" />
+            <ScalarProperty Name="disco_reconnected" ColumnName="disco_reconnected" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbPrintTemps"><EntityTypeMapping TypeName="dbCommercial.tbPrintTemp"><MappingFragment StoreEntitySet="tbPrintTemp">
+            <ScalarProperty Name="row_id" ColumnName="row_id" />
+            <ScalarProperty Name="print_code" ColumnName="print_code" />
+            <ScalarProperty Name="col_string1" ColumnName="col_string1" />
+            <ScalarProperty Name="col_string2" ColumnName="col_string2" />
+            <ScalarProperty Name="col_string3" ColumnName="col_string3" />
+            <ScalarProperty Name="col_string4" ColumnName="col_string4" />
+            <ScalarProperty Name="col_string5" ColumnName="col_string5" />
+            <ScalarProperty Name="col_decimal1" ColumnName="col_decimal1" />
+            <ScalarProperty Name="col_decimal2" ColumnName="col_decimal2" />
+            <ScalarProperty Name="col_decimal3" ColumnName="col_decimal3" />
+            <ScalarProperty Name="col_decimal4" ColumnName="col_decimal4" />
+            <ScalarProperty Name="col_decimal5" ColumnName="col_decimal5" />
+            <ScalarProperty Name="col_int1" ColumnName="col_int1" />
+            <ScalarProperty Name="col_int2" ColumnName="col_int2" />
+            <ScalarProperty Name="col_int3" ColumnName="col_int3" />
+            <ScalarProperty Name="col_int4" ColumnName="col_int4" />
+            <ScalarProperty Name="col_int5" ColumnName="col_int5" />
+            <ScalarProperty Name="col_uid" ColumnName="col_uid" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbRates"><EntityTypeMapping TypeName="dbCommercial.tbRate"><MappingFragment StoreEntitySet="tbRates">
+            <ScalarProperty Name="rate_id" ColumnName="rate_id" />
+            <ScalarProperty Name="category_code" ColumnName="category_code" />
+            <ScalarProperty Name="rate_code" ColumnName="rate_code" />
+            <ScalarProperty Name="size" ColumnName="size" />
+            <ScalarProperty Name="min_vol" ColumnName="min_vol" />
+            <ScalarProperty Name="max_vol" ColumnName="max_vol" />
+            <ScalarProperty Name="minimum_pay" ColumnName="minimum_pay" />
+            <ScalarProperty Name="r11_20" ColumnName="r11_20" />
+            <ScalarProperty Name="r21_30" ColumnName="r21_30" />
+            <ScalarProperty Name="r31_40" ColumnName="r31_40" />
+            <ScalarProperty Name="r41_50" ColumnName="r41_50" />
+            <ScalarProperty Name="r51_up" ColumnName="r51_up" />
+            <ScalarProperty Name="mrental" ColumnName="mrental" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbRecapSales"><EntityTypeMapping TypeName="dbCommercial.tbRecapSale"><MappingFragment StoreEntitySet="tbRecapSales">
+            <ScalarProperty Name="recap_id" ColumnName="recap_id" />
+            <ScalarProperty Name="billmonth" ColumnName="billmonth" />
+            <ScalarProperty Name="zonebook" ColumnName="zonebook" />
+            <ScalarProperty Name="category" ColumnName="category" />
+            <ScalarProperty Name="vol_ctgr" ColumnName="vol_ctgr" />
+            <ScalarProperty Name="num_con" ColumnName="num_con" />
+            <ScalarProperty Name="total_vol" ColumnName="total_vol" />
+            <ScalarProperty Name="total_amt" ColumnName="total_amt" />
+            <ScalarProperty Name="code" ColumnName="code" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbSDRLookups"><EntityTypeMapping TypeName="dbCommercial.tbSDRLookup"><MappingFragment StoreEntitySet="tbSDRLookup">
+            <ScalarProperty Name="sdr_id" ColumnName="sdr_id" />
+            <ScalarProperty Name="sdr_code" ColumnName="sdr_code" />
+            <ScalarProperty Name="sdr_desc" ColumnName="sdr_desc" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbSeniorHistories"><EntityTypeMapping TypeName="dbCommercial.tbSeniorHistory"><MappingFragment StoreEntitySet="tbSeniorHistory">
+            <ScalarProperty Name="seniorhistory_id" ColumnName="seniorhistory_id" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="reg_date" ColumnName="reg_date" />
+            <ScalarProperty Name="exp_date" ColumnName="exp_date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbSeriesNoes"><EntityTypeMapping TypeName="dbCommercial.tbSeriesNo"><MappingFragment StoreEntitySet="tbSeriesNo">
+            <ScalarProperty Name="series_id" ColumnName="series_id" />
+            <ScalarProperty Name="form_name" ColumnName="form_name" />
+            <ScalarProperty Name="series_num" ColumnName="series_num" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbServiceRequests"><EntityTypeMapping TypeName="dbCommercial.tbServiceRequest"><MappingFragment StoreEntitySet="tbServiceRequest">
+            <ScalarProperty Name="sr_id" ColumnName="sr_id" />
+            <ScalarProperty Name="sr_no" ColumnName="sr_no" />
+            <ScalarProperty Name="billdetails_id" ColumnName="billdetails_id" />
+            <ScalarProperty Name="master_id" ColumnName="master_id" />
+            <ScalarProperty Name="complain_id" ColumnName="complain_id" />
+            <ScalarProperty Name="requested_by" ColumnName="requested_by" />
+            <ScalarProperty Name="request_recd_by" ColumnName="request_recd_by" />
+            <ScalarProperty Name="request_recd_date" ColumnName="request_recd_date" />
+            <ScalarProperty Name="inspected_by" ColumnName="inspected_by" />
+            <ScalarProperty Name="inspected_date" ColumnName="inspected_date" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="encoder_id" ColumnName="encoder_id" />
+            <ScalarProperty Name="complain_desc" ColumnName="complain_desc" />
+            <ScalarProperty Name="work_done" ColumnName="work_done" />
+            <ScalarProperty Name="last_rdg" ColumnName="last_rdg" />
+            <ScalarProperty Name="initial_rdg" ColumnName="initial_rdg" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbServiceRequestCodes"><EntityTypeMapping TypeName="dbCommercial.tbServiceRequestCode"><MappingFragment StoreEntitySet="tbServiceRequestCodes">
+            <ScalarProperty Name="srcode_id" ColumnName="srcode_id" />
+            <ScalarProperty Name="sr_code" ColumnName="sr_code" />
+            <ScalarProperty Name="code_desc" ColumnName="code_desc" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbSettings"><EntityTypeMapping TypeName="dbCommercial.tbSetting"><MappingFragment StoreEntitySet="tbSettings">
+            <ScalarProperty Name="settings_id" ColumnName="settings_id" />
+            <ScalarProperty Name="senior_percentage" ColumnName="senior_percentage" />
+            <ScalarProperty Name="senior_volume_cap" ColumnName="senior_volume_cap" />
+            <ScalarProperty Name="meter_mtn" ColumnName="meter_mtn" />
+            <ScalarProperty Name="penalty_percentage" ColumnName="penalty_percentage" />
+            <ScalarProperty Name="collecting_agents" ColumnName="collecting_agents" />
+            <ScalarProperty Name="rf_residential" ColumnName="rf_residential" />
+            <ScalarProperty Name="rf_commercial" ColumnName="rf_commercial" />
+            <ScalarProperty Name="mrs_ipaddress" ColumnName="mrs_ipaddress" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbUsers"><EntityTypeMapping TypeName="dbCommercial.tbUser"><MappingFragment StoreEntitySet="tbUsers">
+            <ScalarProperty Name="user_id" ColumnName="user_id" />
+            <ScalarProperty Name="fullname" ColumnName="fullname" />
+            <ScalarProperty Name="user_name" ColumnName="user_name" />
+            <ScalarProperty Name="pass_word" ColumnName="pass_word" />
+            <ScalarProperty Name="admin" ColumnName="admin" />
+            <ScalarProperty Name="Billing" ColumnName="Billing" />
+            <ScalarProperty Name="Cashier" ColumnName="Cashier" />
+            <ScalarProperty Name="Disco" ColumnName="Disco" />
+            <ScalarProperty Name="Meter" ColumnName="Meter" />
+            <ScalarProperty Name="CSD" ColumnName="CSD" />
+            <ScalarProperty Name="last_program_used" ColumnName="last_program_used" />
+            <ScalarProperty Name="last_login" ColumnName="last_login" />
+            <ScalarProperty Name="remarks" ColumnName="remarks" />
+            <ScalarProperty Name="initials" ColumnName="initials" />
+            <ScalarProperty Name="last_computer_used" ColumnName="last_computer_used" />
+            <ScalarProperty Name="access_code" ColumnName="access_code" />
+            <ScalarProperty Name="job_desc" ColumnName="job_desc" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbZones"><EntityTypeMapping TypeName="dbCommercial.tbZone"><MappingFragment StoreEntitySet="tbZone">
+            <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+            <ScalarProperty Name="location" ColumnName="location" />
+            <ScalarProperty Name="mtr_reader" ColumnName="mtr_reader" />
+            <ScalarProperty Name="bill_server" ColumnName="bill_server" />
+            <ScalarProperty Name="zone_name" ColumnName="zone_name" />
+            <ScalarProperty Name="zone_uid" ColumnName="zone_uid" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tbZoneLookups"><EntityTypeMapping TypeName="dbCommercial.tbZoneLookup"><MappingFragment StoreEntitySet="tbZoneLookup">
+            <ScalarProperty Name="zone_lookup_id" ColumnName="zone_lookup_id" />
+            <ScalarProperty Name="zone_uid" ColumnName="zone_uid" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model2">
+        <EntityTypeShape EntityType="dbCommercial.tbAgingSummary" Width="1.5" PointX="0.75" PointY="0.75" Height="2.7427376302083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBAMCas" Width="1.5" PointX="2.75" PointY="0.75" Height="1.4279589843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBAMEntry" Width="1.5" PointX="2.75" PointY="3.75" Height="4.8792529296875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBAMLookup" Width="1.5" PointX="4.75" PointY="0.75" Height="1.5923063151041657" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBankCode" Width="1.5" PointX="4.75" PointY="3.75" Height="1.4279589843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBankCollection" Width="1.5" PointX="6.75" PointY="0.75" Height="3.7288216145833326" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBilling" Width="1.5" PointX="4.75" PointY="6.75" Height="4.3862109375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBillingCollection" Width="1.5" PointX="6.75" PointY="5.75" Height="3.7288216145833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBillingDelete" Width="1.5" PointX="8.75" PointY="0.75" Height="2.4140429687499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBillingDetail" Width="1.5" PointX="8.75" PointY="4.75" Height="5.2079475911458317" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBillingSchedule" Width="1.5" PointX="0.75" PointY="9.75" Height="4.2218636067708317" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBillingSummary" Width="1.5" PointX="10.75" PointY="0.75" Height="2.2496956380208317" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBillPrinted" Width="1.5" PointX="10.75" PointY="3.75" Height="5.8653369140625031" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbBillProcessing" Width="1.5" PointX="6.75" PointY="10.75" Height="2.7427376302083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbDailyARCustomer" Width="1.5" PointX="8.75" PointY="10.75" Height="3.5644742838541674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbDailySummary" Width="1.5" PointX="10.75" PointY="10.75" Height="3.7288216145833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbDeptDivisionHead" Width="1.5" PointX="12.75" PointY="0.75" Height="1.7566536458333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbDiscoEntry" Width="1.5" PointX="2.75" PointY="12.75" Height="2.4140429687500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbDMAList" Width="1.5" PointX="12.75" PointY="3.75" Height="1.4279589843750031" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbDownloadAgentsHistory" Width="1.5" PointX="12.75" PointY="6.75" Height="2.0853483072916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbLedger" Width="1.5" PointX="12.75" PointY="9.75" Height="3.7288216145833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMaintenanceOrder" Width="1.5" PointX="14.75" PointY="0.75" Height="4.0575162760416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMaster" Width="1.5" PointX="4.75" PointY="14.75" Height="4.87925292968751" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMasterAcct" Width="1.5" PointX="14.75" PointY="5.75" Height="6.5227262369791674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMasterAging" Width="1.5" PointX="12.75" PointY="14.75" Height="3.0714322916666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMeterReader" Width="1.5" PointX="14.75" PointY="13.75" Height="1.5923063151041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMeter" Width="1.5" PointX="6.75" PointY="15.75" Height="2.2496956380208246" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMrsDownload" Width="1.5" PointX="8.75" PointY="15.75" Height="6.6870735677083246" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMRSDownloadHistory" Width="1.5" PointX="16.75" PointY="0.75" Height="1.9210009765625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMrsUpload" Width="1.5" PointX="0.75" PointY="16.75" Height="3.7288216145833246" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMrsUploadEdit" Width="1.5" PointX="16.75" PointY="3.75" Height="2.5783902994791674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbMRSUploadHistory" Width="1.5" PointX="16.75" PointY="7.75" Height="1.9210009765625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbPay" Width="1.5" PointX="16.75" PointY="10.75" Height="6.35837890625001" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbPaySDR" Width="1.5" PointX="18.75" PointY="0.75" Height="1.9210009765625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbPenaltyHistory" Width="1.5" PointX="18.75" PointY="3.75" Height="2.4140429687500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbPrepareAcctHistory" Width="1.5" PointX="18.75" PointY="7.75" Height="2.2496956380208246" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbPrintTemp" Width="1.5" PointX="18.75" PointY="10.75" Height="3.8931689453125102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbRate" Width="1.5" PointX="10.75" PointY="18.75" Height="3.0714322916666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbRecapSale" Width="1.5" PointX="12.75" PointY="18.75" Height="2.4140429687500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbSDRLookup" Width="1.5" PointX="14.75" PointY="18.75" Height="1.4279589843750102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbSeniorHistory" Width="1.5" PointX="18.75" PointY="15.75" Height="1.5923063151041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbSeriesNo" Width="1.5" PointX="16.75" PointY="18.75" Height="1.4279589843750102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbServiceRequest" Width="1.5" PointX="18.75" PointY="18.75" Height="3.7288216145833246" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbServiceRequestCode" Width="1.5" PointX="20.75" PointY="0.75" Height="1.4279589843750102" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbSetting" Width="1.5" PointX="2.75" PointY="20.75" Height="2.4140429687499818" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbUser" Width="1.5" PointX="20.75" PointY="3.75" Height="3.7288216145833246" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbZone" Width="1.5" PointX="4.75" PointY="20.75" Height="1.9210009765624818" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbCommercial.tbZoneLookup" Width="1.5" PointX="20.75" PointY="8.75" Height="1.2636116536458246" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

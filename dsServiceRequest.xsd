@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsServiceRequest" targetNamespace="http://tempuri.org/dsServiceRequest.xsd" xmlns:mstns="http://tempuri.org/dsServiceRequest.xsd" xmlns="http://tempuri.org/dsServiceRequest.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbCommercialConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbCommercialConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BillingSystem.Properties.Settings.GlobalReference.Default.dbCommercialConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwServiceRequestTableAdapter" GeneratorDataComponentClassName="vwServiceRequestTableAdapter" Name="vwServiceRequest" UserDataComponentName="vwServiceRequestTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbCommercialConnectionString (Settings)" DbObjectName="dbCommercial.dbo.vwServiceRequest" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sr_no, requested_by, request_recd_date, status, complain_desc, work_done, inspected_by, inspected_date, remarks, encoder_id, code_desc, acctno, name, address, category, cardno, sr_id FROM vwServiceRequest</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sr_no" DataSetColumn="sr_no" />
+              <Mapping SourceColumn="requested_by" DataSetColumn="requested_by" />
+              <Mapping SourceColumn="request_recd_date" DataSetColumn="request_recd_date" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+              <Mapping SourceColumn="complain_desc" DataSetColumn="complain_desc" />
+              <Mapping SourceColumn="work_done" DataSetColumn="work_done" />
+              <Mapping SourceColumn="inspected_by" DataSetColumn="inspected_by" />
+              <Mapping SourceColumn="inspected_date" DataSetColumn="inspected_date" />
+              <Mapping SourceColumn="remarks" DataSetColumn="remarks" />
+              <Mapping SourceColumn="encoder_id" DataSetColumn="encoder_id" />
+              <Mapping SourceColumn="code_desc" DataSetColumn="code_desc" />
+              <Mapping SourceColumn="acctno" DataSetColumn="acctno" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="category" DataSetColumn="category" />
+              <Mapping SourceColumn="cardno" DataSetColumn="cardno" />
+              <Mapping SourceColumn="sr_id" DataSetColumn="sr_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsServiceRequest" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsServiceRequest" msprop:Generator_UserDSName="dsServiceRequest">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwServiceRequest" msprop:Generator_TableClassName="vwServiceRequestDataTable" msprop:Generator_TableVarName="tablevwServiceRequest" msprop:Generator_TablePropName="vwServiceRequest" msprop:Generator_RowDeletingName="vwServiceRequestRowDeleting" msprop:Generator_UserTableName="vwServiceRequest" msprop:Generator_RowChangingName="vwServiceRequestRowChanging" msprop:Generator_RowEvHandlerName="vwServiceRequestRowChangeEventHandler" msprop:Generator_RowDeletedName="vwServiceRequestRowDeleted" msprop:Generator_RowEvArgName="vwServiceRequestRowChangeEvent" msprop:Generator_RowChangedName="vwServiceRequestRowChanged" msprop:Generator_RowClassName="vwServiceRequestRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sr_no" msprop:Generator_ColumnVarNameInTable="columnsr_no" msprop:Generator_ColumnPropNameInRow="sr_no" msprop:Generator_ColumnPropNameInTable="sr_noColumn" msprop:Generator_UserColumnName="sr_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="requested_by" msprop:Generator_ColumnVarNameInTable="columnrequested_by" msprop:Generator_ColumnPropNameInRow="requested_by" msprop:Generator_ColumnPropNameInTable="requested_byColumn" msprop:Generator_UserColumnName="requested_by" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="request_recd_date" msprop:Generator_ColumnVarNameInTable="columnrequest_recd_date" msprop:Generator_ColumnPropNameInRow="request_recd_date" msprop:Generator_ColumnPropNameInTable="request_recd_dateColumn" msprop:Generator_UserColumnName="request_recd_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:short" minOccurs="0" />
+              <xs:element name="complain_desc" msprop:Generator_ColumnVarNameInTable="columncomplain_desc" msprop:Generator_ColumnPropNameInRow="complain_desc" msprop:Generator_ColumnPropNameInTable="complain_descColumn" msprop:Generator_UserColumnName="complain_desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="work_done" msprop:Generator_ColumnVarNameInTable="columnwork_done" msprop:Generator_ColumnPropNameInRow="work_done" msprop:Generator_ColumnPropNameInTable="work_doneColumn" msprop:Generator_UserColumnName="work_done" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="inspected_by" msprop:Generator_ColumnVarNameInTable="columninspected_by" msprop:Generator_ColumnPropNameInRow="inspected_by" msprop:Generator_ColumnPropNameInTable="inspected_byColumn" msprop:Generator_UserColumnName="inspected_by" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="inspected_date" msprop:Generator_ColumnVarNameInTable="columninspected_date" msprop:Generator_ColumnPropNameInRow="inspected_date" msprop:Generator_ColumnPropNameInTable="inspected_dateColumn" msprop:Generator_UserColumnName="inspected_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="encoder_id" msprop:Generator_ColumnVarNameInTable="columnencoder_id" msprop:Generator_ColumnPropNameInRow="encoder_id" msprop:Generator_ColumnPropNameInTable="encoder_idColumn" msprop:Generator_UserColumnName="encoder_id" type="xs:int" minOccurs="0" />
+              <xs:element name="code_desc" msprop:Generator_ColumnVarNameInTable="columncode_desc" msprop:Generator_ColumnPropNameInRow="code_desc" msprop:Generator_ColumnPropNameInTable="code_descColumn" msprop:Generator_UserColumnName="code_desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acctno" msprop:Generator_ColumnVarNameInTable="columnacctno" msprop:Generator_ColumnPropNameInRow="acctno" msprop:Generator_ColumnPropNameInTable="acctnoColumn" msprop:Generator_UserColumnName="acctno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category" type="xs:int" minOccurs="0" />
+              <xs:element name="cardno" msprop:Generator_ColumnVarNameInTable="columncardno" msprop:Generator_ColumnPropNameInRow="cardno" msprop:Generator_ColumnPropNameInTable="cardnoColumn" msprop:Generator_UserColumnName="cardno" type="xs:int" minOccurs="0" />
+              <xs:element name="sr_id" msprop:Generator_ColumnVarNameInTable="columnsr_id" msprop:Generator_ColumnPropNameInRow="sr_id" msprop:Generator_ColumnPropNameInTable="sr_idColumn" msprop:Generator_UserColumnName="sr_id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vwServiceRequest" />
+      <xs:field xpath="mstns:sr_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDMAPattern" targetNamespace="http://tempuri.org/dsDMAPattern.xsd" xmlns:mstns="http://tempuri.org/dsDMAPattern.xsd" xmlns="http://tempuri.org/dsDMAPattern.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDMAPattern" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDMAPattern" msprop:Generator_UserDSName="dsDMAPattern">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbDMAPattern" msprop:Generator_TableClassName="tbDMAPatternDataTable" msprop:Generator_TableVarName="tabletbDMAPattern" msprop:Generator_TablePropName="tbDMAPattern" msprop:Generator_RowDeletingName="tbDMAPatternRowDeleting" msprop:Generator_UserTableName="tbDMAPattern" msprop:Generator_RowChangingName="tbDMAPatternRowChanging" msprop:Generator_RowEvHandlerName="tbDMAPatternRowChangeEventHandler" msprop:Generator_RowDeletedName="tbDMAPatternRowDeleted" msprop:Generator_RowEvArgName="tbDMAPatternRowChangeEvent" msprop:Generator_RowChangedName="tbDMAPatternRowChanged" msprop:Generator_RowClassName="tbDMAPatternRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dma" msprop:Generator_ColumnVarNameInTable="columndma" msprop:Generator_ColumnPropNameInRow="dma" msprop:Generator_ColumnPropNameInTable="dmaColumn" msprop:Generator_UserColumnName="dma" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0030_to5sc" msprop:Generator_ColumnVarNameInTable="column0to5sc" msprop:Generator_ColumnPropNameInRow="_0to5sc" msprop:Generator_ColumnPropNameInTable="_0to5scColumn" msprop:Generator_UserColumnName="0to5sc" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0030_to5vol" msprop:Generator_ColumnVarNameInTable="column0to5vol" msprop:Generator_ColumnPropNameInRow="_0to5vol" msprop:Generator_ColumnPropNameInTable="_0to5volColumn" msprop:Generator_UserColumnName="0to5vol" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0036_to10sc" msprop:Generator_ColumnVarNameInTable="column6to10sc" msprop:Generator_ColumnPropNameInRow="_6to10sc" msprop:Generator_ColumnPropNameInTable="_6to10scColumn" msprop:Generator_UserColumnName="6to10sc" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0036_to10vol" msprop:Generator_ColumnVarNameInTable="column6to10vol" msprop:Generator_ColumnPropNameInRow="_6to10vol" msprop:Generator_ColumnPropNameInTable="_6to10volColumn" msprop:Generator_UserColumnName="6to10vol" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0031_1to20sc" msprop:Generator_ColumnVarNameInTable="column11to20sc" msprop:Generator_ColumnPropNameInRow="_11to20sc" msprop:Generator_ColumnPropNameInTable="_11to20scColumn" msprop:Generator_UserColumnName="11to20sc" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0031_1to20vol" msprop:Generator_ColumnVarNameInTable="column11to20vol" msprop:Generator_ColumnPropNameInRow="_11to20vol" msprop:Generator_ColumnPropNameInTable="_11to20volColumn" msprop:Generator_UserColumnName="11to20vol" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0032_1to30sc" msprop:Generator_ColumnVarNameInTable="column21to30sc" msprop:Generator_ColumnPropNameInRow="_21to30sc" msprop:Generator_ColumnPropNameInTable="_21to30scColumn" msprop:Generator_UserColumnName="21to30sc" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0032_1to30vol" msprop:Generator_ColumnVarNameInTable="column21to30vol" msprop:Generator_ColumnPropNameInRow="_21to30vol" msprop:Generator_ColumnPropNameInTable="_21to30volColumn" msprop:Generator_UserColumnName="21to30vol" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0033_1to40sc" msprop:Generator_ColumnVarNameInTable="column31to40sc" msprop:Generator_ColumnPropNameInRow="_31to40sc" msprop:Generator_ColumnPropNameInTable="_31to40scColumn" msprop:Generator_UserColumnName="31to40sc" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0033_1to40vol" msprop:Generator_ColumnVarNameInTable="column31to40vol" msprop:Generator_ColumnPropNameInRow="_31to40vol" msprop:Generator_ColumnPropNameInTable="_31to40volColumn" msprop:Generator_UserColumnName="31to40vol" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0034_1to50sc" msprop:Generator_ColumnVarNameInTable="column41to50sc" msprop:Generator_ColumnPropNameInRow="_41to50sc" msprop:Generator_ColumnPropNameInTable="_41to50scColumn" msprop:Generator_UserColumnName="41to50sc" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0034_1to50vol" msprop:Generator_ColumnVarNameInTable="column41to50vol" msprop:Generator_ColumnPropNameInRow="_41to50vol" msprop:Generator_ColumnPropNameInTable="_41to50volColumn" msprop:Generator_UserColumnName="41to50vol" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0035_1upsc" msprop:Generator_ColumnVarNameInTable="column51upsc" msprop:Generator_ColumnPropNameInRow="_51upsc" msprop:Generator_ColumnPropNameInTable="_51upscColumn" msprop:Generator_UserColumnName="51upsc" type="xs:int" minOccurs="0" />
+              <xs:element name="_x0035_1upvol" msprop:Generator_ColumnVarNameInTable="column51upvol" msprop:Generator_ColumnPropNameInRow="_51upvol" msprop:Generator_ColumnPropNameInTable="_51upvolColumn" msprop:Generator_UserColumnName="51upvol" type="xs:int" minOccurs="0" />
+              <xs:element name="totalsc" msprop:Generator_ColumnVarNameInTable="columntotalsc" msprop:Generator_ColumnPropNameInRow="totalsc" msprop:Generator_ColumnPropNameInTable="totalscColumn" msprop:Generator_UserColumnName="totalsc" type="xs:int" minOccurs="0" />
+              <xs:element name="totalvol" msprop:Generator_ColumnVarNameInTable="columntotalvol" msprop:Generator_ColumnPropNameInRow="totalvol" msprop:Generator_ColumnPropNameInTable="totalvolColumn" msprop:Generator_UserColumnName="totalvol" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

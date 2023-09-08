@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbRezoneModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dbRezoneModelStoreContainer">
+          <EntitySet Name="tbNewZone" EntityType="dbRezoneModel.Store.tbNewZone" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbRezone" EntityType="dbRezoneModel.Store.tbRezone" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="tbNewZone">
+          <Key>
+            <PropertyRef Name="newzone_id" />
+          </Key>
+          <Property Name="newzone_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="newzone_name" Type="varchar" MaxLength="4" />
+        </EntityType>
+        <EntityType Name="tbRezone">
+          <Key>
+            <PropertyRef Name="rezone_id" />
+          </Key>
+          <Property Name="rezone_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="acctno" Type="varchar" MaxLength="6" />
+          <Property Name="old_zone" Type="varchar" MaxLength="4" />
+          <Property Name="new_zone" Type="varchar" MaxLength="4" />
+          <Property Name="date_added" Type="datetime" />
+          <Property Name="remarks" Type="varchar" MaxLength="100" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbRezoneModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="dbRezoneEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbNewZones" EntityType="dbRezoneModel.tbNewZone" />
+          <EntitySet Name="tbRezones" EntityType="dbRezoneModel.tbRezone" />
+        </EntityContainer>
+        <EntityType Name="tbNewZone">
+          <Key>
+            <PropertyRef Name="newzone_id" />
+          </Key>
+          <Property Name="newzone_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="newzone_name" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbRezone">
+          <Key>
+            <PropertyRef Name="rezone_id" />
+          </Key>
+          <Property Name="rezone_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="acctno" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="old_zone" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="new_zone" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="date_added" Type="DateTime" />
+          <Property Name="remarks" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbRezoneModelStoreContainer" CdmEntityContainer="dbRezoneEntities">
+          <EntitySetMapping Name="tbNewZones">
+            <EntityTypeMapping TypeName="dbRezoneModel.tbNewZone">
+              <MappingFragment StoreEntitySet="tbNewZone">
+                <ScalarProperty Name="newzone_id" ColumnName="newzone_id" />
+                <ScalarProperty Name="newzone_name" ColumnName="newzone_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbRezones">
+            <EntityTypeMapping TypeName="dbRezoneModel.tbRezone">
+              <MappingFragment StoreEntitySet="tbRezone">
+                <ScalarProperty Name="rezone_id" ColumnName="rezone_id" />
+                <ScalarProperty Name="acctno" ColumnName="acctno" />
+                <ScalarProperty Name="old_zone" ColumnName="old_zone" />
+                <ScalarProperty Name="new_zone" ColumnName="new_zone" />
+                <ScalarProperty Name="date_added" ColumnName="date_added" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model3">
+        <EntityTypeShape EntityType="dbRezoneModel.tbNewZone" Width="1.5" PointX="0.75" PointY="0.75" Height="1.4033821614583331" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbRezoneModel.tbRezone" Width="1.5" PointX="2.75" PointY="0.75" Height="2.1725878906249996" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

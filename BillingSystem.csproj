@@ -1,0 +1,2143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5451E636-1B8C-49B7-AD35-1BE163A5818E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BillingSystem</RootNamespace>
+    <AssemblyName>BillingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalSettings|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\LocalSettings\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\BillingSystem.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DevServer|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\DevServer\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\BillingSystem.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '1Develop|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\1Develop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\BillingSystem.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v11.2.Core, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.2.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentClass.cs" />
+    <Compile Include="BillFile.cs" />
+    <Compile Include="CDAV.cs" />
+    <Compile Include="checking_rpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>checking_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="classMasterData.cs" />
+    <Compile Include="collection.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>collection.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dbCommercial.Designer.cs">
+      <DependentUpon>dbCommercial.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="dbRafflePeriod.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbRafflePeriod.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBRemix.cs" />
+    <Compile Include="dsAgentHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAgentHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBackupLog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBackupLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBAMBatchDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBAMBatchDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBAMCases.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBAMCases.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBAMEntries.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBAMEntries.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBAMJournal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBAMJournal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBAMLookup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBAMLookup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBankCodes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBankCodes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBilling.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBilling.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBillingDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBillingDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBillPrinted.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBillPrinted.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBlacklist.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBlacklist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDMAEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDMAEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDMAList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDMAList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDMAPattern.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDMAPattern.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDMAResult.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDMAResult.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDMTR.cs">
+      <DependentUpon>dsDMTR.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsDMTR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDMTR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDormantMonitor.cs">
+      <DependentUpon>dsDormantMonitor.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsDormantMonitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDormantMonitor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLedger.cs">
+      <DependentUpon>dsLedger.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsLedger.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLedger.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsManualBill.cs">
+      <DependentUpon>dsManualBill.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsManualBill.Designer.cs">
+      <DependentUpon>dsManualBill.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="dsMaster.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMasterAccts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMasterAccts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMasterAging.cs">
+      <DependentUpon>dsMasterAging.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsMasterAging.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMasterAging.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMasterDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMasterDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMasterQuery.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMasterQuery.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMeters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMeters.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMRSDownload.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMRSDownload.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMRSDownUpload.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMRSDownUpload.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMRSUploadView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMRSUploadView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPenaltyHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPenaltyHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPrepareAcct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrepareAcct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRaffleEntries.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRaffleEntries.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRecapSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRecapSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsServiceRequest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsServiceRequest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsServiceRequestCodes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsServiceRequestCodes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsUploadHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUploadHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsZone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsZone.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsZoneLookup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsZoneLookup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAccountInfoFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAccountInfoFill.Designer.cs">
+      <DependentUpon>formAccountInfoFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddBillEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddBillEntry.Designer.cs">
+      <DependentUpon>formAddBillEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddJournalEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddJournalEntry.Designer.cs">
+      <DependentUpon>formAddJournalEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddManualServiceRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddManualServiceRequest.Designer.cs">
+      <DependentUpon>formAddManualServiceRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddRezoneAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddRezoneAccount.Designer.cs">
+      <DependentUpon>formAddRezoneAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAgingChecking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAgingChecking.Designer.cs">
+      <DependentUpon>formAgingChecking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formArrearsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formArrearsList.Designer.cs">
+      <DependentUpon>formArrearsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBackupDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBackupDatabase.Designer.cs">
+      <DependentUpon>formBackupDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBackupLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBackupLog.Designer.cs">
+      <DependentUpon>formBackupLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBAMApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBAMApprove.Designer.cs">
+      <DependentUpon>formBAMApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBAMApproved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBAMApproved.Designer.cs">
+      <DependentUpon>formBAMApproved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBAMDetailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBAMDetailed.Designer.cs">
+      <DependentUpon>formBAMDetailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBAMEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBAMEntry.Designer.cs">
+      <DependentUpon>formBAMEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBAMEntryNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBAMEntryNew.Designer.cs">
+      <DependentUpon>formBAMEntryNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBankCollect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBankCollect.Designer.cs">
+      <DependentUpon>formBankCollect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBayadCenterImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBayadCenterImport.Designer.cs">
+      <DependentUpon>formBayadCenterImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBillingCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBillingCollection.Designer.cs">
+      <DependentUpon>formBillingCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBillingDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBillingDelete.Designer.cs">
+      <DependentUpon>formBillingDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBillingSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBillingSchedule.Designer.cs">
+      <DependentUpon>formBillingSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBillManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBillManual.Designer.cs">
+      <DependentUpon>formBillManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBlacklistAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBlacklistAdd.Designer.cs">
+      <DependentUpon>formBlacklistAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBlacklistMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBlacklistMenu.Designer.cs">
+      <DependentUpon>formBlacklistMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formChangeCardNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChangeCardNo.Designer.cs">
+      <DependentUpon>formChangeCardNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formChangeMeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChangeMeter.Designer.cs">
+      <DependentUpon>formChangeMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCheckBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCheckBilling.Designer.cs">
+      <DependentUpon>formCheckBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCheckDigitTester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCheckDigitTester.Designer.cs">
+      <DependentUpon>formCheckDigitTester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCheckDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCheckDownload.Designer.cs">
+      <DependentUpon>formCheckDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formConsumptionPatternChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formConsumptionPatternChecker.Designer.cs">
+      <DependentUpon>formConsumptionPatternChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDailySummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDailySummary.Designer.cs">
+      <DependentUpon>formDailySummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDamageMeters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDamageMeters.Designer.cs">
+      <DependentUpon>formDamageMeters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDataRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDataRepair.Designer.cs">
+      <DependentUpon>formDataRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDisconnectedAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDisconnectedAccounts.Designer.cs">
+      <DependentUpon>formDisconnectedAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDiscoUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDiscoUpdate.Designer.cs">
+      <DependentUpon>formDiscoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDMAAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDMAAdd.Designer.cs">
+      <DependentUpon>formDMAAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDMAConsumption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDMAConsumption.Designer.cs">
+      <DependentUpon>formDMAConsumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDMAConsumptionPattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDMAConsumptionPattern.Designer.cs">
+      <DependentUpon>formDMAConsumptionPattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDMAMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDMAMenu.Designer.cs">
+      <DependentUpon>formDMAMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDMTRNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDMTRNew.Designer.cs">
+      <DependentUpon>formDMTRNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDormantMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDormantMonitor.Designer.cs">
+      <DependentUpon>formDormantMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formECPAYImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formECPAYImport.Designer.cs">
+      <DependentUpon>formECPAYImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formExportBillfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formExportBillfile.Designer.cs">
+      <DependentUpon>formExportBillfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGenerateAging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGenerateAging.Designer.cs">
+      <DependentUpon>formGenerateAging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGeneratePenalty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGeneratePenalty.Designer.cs">
+      <DependentUpon>formGeneratePenalty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGenerateWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGenerateWizard.Designer.cs">
+      <DependentUpon>formGenerateWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGetDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGetDateForm.Designer.cs">
+      <DependentUpon>formGetDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGovPenalty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGovPenalty.Designer.cs">
+      <DependentUpon>formGovPenalty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formImportGcash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formImportGcash.Designer.cs">
+      <DependentUpon>formImportGcash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLoadSchedZones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLoadSchedZones.Designer.cs">
+      <DependentUpon>formLoadSchedZones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManualBillAddEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManualBillAddEntry.Designer.cs">
+      <DependentUpon>formManualBillAddEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManualBillEncode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManualBillEncode.Designer.cs">
+      <DependentUpon>formManualBillEncode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManualBillPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManualBillPrint.Designer.cs">
+      <DependentUpon>formManualBillPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManualEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManualEntry.Designer.cs">
+      <DependentUpon>formManualEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMasterAcctEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMasterAcctEdit.Designer.cs">
+      <DependentUpon>formMasterAcctEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMasterAcctsRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMasterAcctsRpt.Designer.cs">
+      <DependentUpon>formMasterAcctsRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMasterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMasterEditor.Designer.cs">
+      <DependentUpon>formMasterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMasterViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMasterViewer.Designer.cs">
+      <DependentUpon>formMasterViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMeterMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMeterMenu.Designer.cs">
+      <DependentUpon>formMeterMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMeterReaderFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMeterReaderFile.Designer.cs">
+      <DependentUpon>formMeterReaderFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMRSDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMRSDownload.Designer.cs">
+      <DependentUpon>formMRSDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMRSUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMRSUpload.Designer.cs">
+      <DependentUpon>formMRSUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formORSeriesRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formORSeriesRepair.Designer.cs">
+      <DependentUpon>formORSeriesRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPassword.Designer.cs">
+      <DependentUpon>formPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPaymentRecap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPaymentRecap.Designer.cs">
+      <DependentUpon>formPaymentRecap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPenaltyDetailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPenaltyDetailed.Designer.cs">
+      <DependentUpon>formPenaltyDetailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPrintAging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPrintAging.Designer.cs">
+      <DependentUpon>formPrintAging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPrintPosted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPrintPosted.Designer.cs">
+      <DependentUpon>formPrintPosted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formProcessAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formProcessAccounts.Designer.cs">
+      <DependentUpon>formProcessAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRaffleGenerateEntries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRaffleGenerateEntries.Designer.cs">
+      <DependentUpon>formRaffleGenerateEntries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRafflePeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRafflePeriod.Designer.cs">
+      <DependentUpon>formRafflePeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRafflePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRafflePrint.Designer.cs">
+      <DependentUpon>formRafflePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRecapAttachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRecapAttachment.Designer.cs">
+      <DependentUpon>formRecapAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRecapSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRecapSales.Designer.cs">
+      <DependentUpon>formRecapSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formReconPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReconPayments.Designer.cs">
+      <DependentUpon>formReconPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formReconUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReconUpdate.Designer.cs">
+      <DependentUpon>formReconUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formReporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReporting.Designer.cs">
+      <DependentUpon>formReporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRezoning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRezoning.Designer.cs">
+      <DependentUpon>formRezoning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUpdateBankCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUpdateBankCollection.Designer.cs">
+      <DependentUpon>formUpdateBankCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUpdateRezoning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUpdateRezoning.Designer.cs">
+      <DependentUpon>formUpdateRezoning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUploadsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUploadsEdit.Designer.cs">
+      <DependentUpon>formUploadsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewBillYellow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewBillYellow.Designer.cs">
+      <DependentUpon>formViewBillYellow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewUploadHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewUploadHistory.Designer.cs">
+      <DependentUpon>formViewUploadHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formZoneLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formZoneLookup.Designer.cs">
+      <DependentUpon>formZoneLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBAMBatchEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBAMBatchEntry.Designer.cs">
+      <DependentUpon>frmBAMBatchEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillFileRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillFileRpt.Designer.cs">
+      <DependentUpon>frmBillFileRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDownloadAgents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownloadAgents.Designer.cs">
+      <DependentUpon>frmDownloadAgents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManualUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManualUpdate.Designer.cs">
+      <DependentUpon>frmManualUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintBills.Designer.cs">
+      <DependentUpon>frmPrintBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceRequestMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceRequestMenu.Designer.cs">
+      <DependentUpon>frmServiceRequestMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowLedger.Designer.cs">
+      <DependentUpon>frmShowLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalFunctions.cs" />
+    <Compile Include="ManualBillYellow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManualBillYellow.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model3.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model5.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model6.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="models\ManualBillData.cs" />
+    <Compile Include="models\NotificationTransaction.cs" />
+    <Compile Include="models\NotifyRepository.cs" />
+    <Compile Include="MRSData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawPrinterHelper.cs" />
+    <Compile Include="ReadLog.cs" />
+    <Compile Include="rptAgingActiveCtgy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAgingActiveCtgy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAgingDetailed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAgingDetailed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAgingRecap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAgingRecap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAgingZone.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAgingZone.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBAM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBAM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBAMBatchDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBAMBatchDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBAMDetailed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBAMDetailed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBillfile.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBillfile.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBillingSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBillingSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBillPaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBillPaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBillPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBillPrint.Designer.cs">
+      <DependentUpon>rptBillPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptConsumptionPattern.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptConsumptionPattern.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDailyBillingCollection.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDailyBillingCollection.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDiscoAccts.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDiscoAccts.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDiscoAcctsSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDiscoAcctsSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDisconnectedAccts.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDisconnectedAccts.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDMAConsumption.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDMAConsumption.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDMAPattern.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDMAPattern.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDMAResult.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDMAResult.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptManualBillFile.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptManualBillFile.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMasterAccts.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMasterAccts.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptMasterArrears.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMasterArrears.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptMeterReaderFile.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptMeterReaderFile.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPaymentRecap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPaymentRecap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRaffleEntries.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRaffleEntries.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRecapAttach.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRecapAttach.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRecapAttachSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRecapAttachSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptRecapPenaltyDetailed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRecapPenaltyDetailed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptReconPayments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptReconPayments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSeniorDetailed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSeniorDetailed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptServiceRequest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptServiceRequest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest.cs" />
+    <Compile Include="TextPrompt.cs" />
+    <Compile Include="UserLogin.cs" />
+    <Compile Include="xtalIF2Payments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xtalIF2Payments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xtalIFBalance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xtalIFBalance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="checking_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>checking_rpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="collection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>collection.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAccountInfoFill.resx">
+      <DependentUpon>formAccountInfoFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddBillEntry.resx">
+      <DependentUpon>formAddBillEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddJournalEntry.resx">
+      <DependentUpon>formAddJournalEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddManualServiceRequest.resx">
+      <DependentUpon>formAddManualServiceRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddRezoneAccount.resx">
+      <DependentUpon>formAddRezoneAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAgingChecking.resx">
+      <DependentUpon>formAgingChecking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formArrearsList.resx">
+      <DependentUpon>formArrearsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBackupDatabase.resx">
+      <DependentUpon>formBackupDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBackupLog.resx">
+      <DependentUpon>formBackupLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBAMApprove.resx">
+      <DependentUpon>formBAMApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBAMApproved.resx">
+      <DependentUpon>formBAMApproved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBAMDetailed.resx">
+      <DependentUpon>formBAMDetailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBAMEntry.resx">
+      <DependentUpon>formBAMEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBAMEntryNew.resx">
+      <DependentUpon>formBAMEntryNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBankCollect.resx">
+      <DependentUpon>formBankCollect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBayadCenterImport.resx">
+      <DependentUpon>formBayadCenterImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBillingCollection.resx">
+      <DependentUpon>formBillingCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBillingDelete.resx">
+      <DependentUpon>formBillingDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBillingSchedule.resx">
+      <DependentUpon>formBillingSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBillManual.resx">
+      <DependentUpon>formBillManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBlacklistAdd.resx">
+      <DependentUpon>formBlacklistAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBlacklistMenu.resx">
+      <DependentUpon>formBlacklistMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChangeCardNo.resx">
+      <DependentUpon>formChangeCardNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChangeMeter.resx">
+      <DependentUpon>formChangeMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCheckBilling.resx">
+      <DependentUpon>formCheckBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCheckDigitTester.resx">
+      <DependentUpon>formCheckDigitTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCheckDownload.resx">
+      <DependentUpon>formCheckDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formConsumptionPatternChecker.resx">
+      <DependentUpon>formConsumptionPatternChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDailySummary.resx">
+      <DependentUpon>formDailySummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDamageMeters.resx">
+      <DependentUpon>formDamageMeters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDataRepair.resx">
+      <DependentUpon>formDataRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDisconnectedAccounts.resx">
+      <DependentUpon>formDisconnectedAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDiscoUpdate.resx">
+      <DependentUpon>formDiscoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDMAAdd.resx">
+      <DependentUpon>formDMAAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDMAConsumption.resx">
+      <DependentUpon>formDMAConsumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDMAConsumptionPattern.resx">
+      <DependentUpon>formDMAConsumptionPattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDMAMenu.resx">
+      <DependentUpon>formDMAMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDMTRNew.resx">
+      <DependentUpon>formDMTRNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDormantMonitor.resx">
+      <DependentUpon>formDormantMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formECPAYImport.resx">
+      <DependentUpon>formECPAYImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formExportBillfile.resx">
+      <DependentUpon>formExportBillfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGenerateAging.resx">
+      <DependentUpon>formGenerateAging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGeneratePenalty.resx">
+      <DependentUpon>formGeneratePenalty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGenerateWizard.resx">
+      <DependentUpon>formGenerateWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGetDateForm.resx">
+      <DependentUpon>formGetDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGovPenalty.resx">
+      <DependentUpon>formGovPenalty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formImportGcash.resx">
+      <DependentUpon>formImportGcash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLoadSchedZones.resx">
+      <DependentUpon>formLoadSchedZones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManualBillAddEntry.resx">
+      <DependentUpon>formManualBillAddEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManualBillEncode.resx">
+      <DependentUpon>formManualBillEncode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManualBillPrint.resx">
+      <DependentUpon>formManualBillPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManualEntry.resx">
+      <DependentUpon>formManualEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMasterAcctEdit.resx">
+      <DependentUpon>formMasterAcctEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMasterAcctsRpt.resx">
+      <DependentUpon>formMasterAcctsRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMasterEditor.resx">
+      <DependentUpon>formMasterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMasterViewer.resx">
+      <DependentUpon>formMasterViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMeterMenu.resx">
+      <DependentUpon>formMeterMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMeterReaderFile.resx">
+      <DependentUpon>formMeterReaderFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMRSDownload.resx">
+      <DependentUpon>formMRSDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMRSUpload.resx">
+      <DependentUpon>formMRSUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formORSeriesRepair.resx">
+      <DependentUpon>formORSeriesRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPassword.resx">
+      <DependentUpon>formPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPaymentRecap.resx">
+      <DependentUpon>formPaymentRecap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPenaltyDetailed.resx">
+      <DependentUpon>formPenaltyDetailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPrintAging.resx">
+      <DependentUpon>formPrintAging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPrintPosted.resx">
+      <DependentUpon>formPrintPosted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formProcessAccounts.resx">
+      <DependentUpon>formProcessAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRaffleGenerateEntries.resx">
+      <DependentUpon>formRaffleGenerateEntries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRafflePeriod.resx">
+      <DependentUpon>formRafflePeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRafflePrint.resx">
+      <DependentUpon>formRafflePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRecapAttachment.resx">
+      <DependentUpon>formRecapAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRecapSales.resx">
+      <DependentUpon>formRecapSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formReconPayments.resx">
+      <DependentUpon>formReconPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formReconUpdate.resx">
+      <DependentUpon>formReconUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formReporting.resx">
+      <DependentUpon>formReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRezoning.resx">
+      <DependentUpon>formRezoning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUpdateBankCollection.resx">
+      <DependentUpon>formUpdateBankCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUpdateRezoning.resx">
+      <DependentUpon>formUpdateRezoning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewBillYellow.resx">
+      <DependentUpon>formViewBillYellow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewUploadHistory.resx">
+      <DependentUpon>formViewUploadHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formZoneLookup.resx">
+      <DependentUpon>formZoneLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBAMBatchEntry.resx">
+      <DependentUpon>frmBAMBatchEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBillFileRpt.resx">
+      <DependentUpon>frmBillFileRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownloadAgents.resx">
+      <DependentUpon>frmDownloadAgents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManualUpdate.resx">
+      <DependentUpon>frmManualUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintBills.resx">
+      <DependentUpon>frmPrintBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceRequestMenu.resx">
+      <DependentUpon>frmServiceRequestMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowLedger.resx">
+      <DependentUpon>frmShowLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualBillYellow.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ManualBillYellow.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rptAgingActiveCtgy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAgingActiveCtgy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAgingDetailed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAgingDetailed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAgingRecap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAgingRecap.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAgingZone.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAgingZone.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBAM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBAM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBAMBatchDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBAMBatchDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBAMDetailed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBAMDetailed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBillfile.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBillfile.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBillingSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBillingSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBillPaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBillPaid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBillPrint.resx">
+      <DependentUpon>rptBillPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptConsumptionPattern.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptConsumptionPattern.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDailyBillingCollection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDailyBillingCollection.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDiscoAccts.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDiscoAccts.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDiscoAcctsSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDiscoAcctsSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDisconnectedAccts.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDisconnectedAccts.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDMAConsumption.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDMAConsumption.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDMAPattern.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDMAPattern.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDMAResult.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDMAResult.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptManualBillFile.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptManualBillFile.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMasterAccts.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMasterAccts.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMasterArrears.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMasterArrears.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptMeterReaderFile.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptMeterReaderFile.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPaymentRecap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPaymentRecap.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRaffleEntries.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRaffleEntries.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRecapAttach.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRecapAttach.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRecapAttachSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRecapAttachSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRecapPenaltyDetailed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRecapPenaltyDetailed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReconPayments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReconPayments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSeniorDetailed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSeniorDetailed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptServiceRequest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptServiceRequest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtalIF2Payments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>xtalIF2Payments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xtalIFBalance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>xtalIFBalance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="dbRafflePeriod.xsc">
+      <DependentUpon>dbRafflePeriod.xsd</DependentUpon>
+    </None>
+    <None Include="dbRafflePeriod.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbRafflePeriod.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbRafflePeriod.xss">
+      <DependentUpon>dbRafflePeriod.xsd</DependentUpon>
+    </None>
+    <None Include="dsAgentHistory.xsc">
+      <DependentUpon>dsAgentHistory.xsd</DependentUpon>
+    </None>
+    <None Include="dsAgentHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAgentHistory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAgentHistory.xss">
+      <DependentUpon>dsAgentHistory.xsd</DependentUpon>
+    </None>
+    <None Include="dsBackupLog.xsc">
+      <DependentUpon>dsBackupLog.xsd</DependentUpon>
+    </None>
+    <None Include="dsBackupLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBackupLog.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBackupLog.xss">
+      <DependentUpon>dsBackupLog.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMBatchDetails.xsc">
+      <DependentUpon>dsBAMBatchDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMBatchDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBAMBatchDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBAMBatchDetails.xss">
+      <DependentUpon>dsBAMBatchDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMCases.xsc">
+      <DependentUpon>dsBAMCases.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMCases.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBAMCases.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBAMCases.xss">
+      <DependentUpon>dsBAMCases.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMEntries.xsc">
+      <DependentUpon>dsBAMEntries.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMEntries.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBAMEntries.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBAMEntries.xss">
+      <DependentUpon>dsBAMEntries.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMJournal.xsc">
+      <DependentUpon>dsBAMJournal.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMJournal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBAMJournal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBAMJournal.xss">
+      <DependentUpon>dsBAMJournal.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMLookup.xsc">
+      <DependentUpon>dsBAMLookup.xsd</DependentUpon>
+    </None>
+    <None Include="dsBAMLookup.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBAMLookup.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBAMLookup.xss">
+      <DependentUpon>dsBAMLookup.xsd</DependentUpon>
+    </None>
+    <None Include="dsBankCodes.xsc">
+      <DependentUpon>dsBankCodes.xsd</DependentUpon>
+    </None>
+    <None Include="dsBankCodes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBankCodes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBankCodes.xss">
+      <DependentUpon>dsBankCodes.xsd</DependentUpon>
+    </None>
+    <None Include="dsBilling.xsc">
+      <DependentUpon>dsBilling.xsd</DependentUpon>
+    </None>
+    <None Include="dsBilling.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBilling.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBilling.xss">
+      <DependentUpon>dsBilling.xsd</DependentUpon>
+    </None>
+    <None Include="dsBillingDetails.xsc">
+      <DependentUpon>dsBillingDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsBillingDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBillingDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBillingDetails.xss">
+      <DependentUpon>dsBillingDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsBillPrinted.xsc">
+      <DependentUpon>dsBillPrinted.xsd</DependentUpon>
+    </None>
+    <None Include="dsBillPrinted.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBillPrinted.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBillPrinted.xss">
+      <DependentUpon>dsBillPrinted.xsd</DependentUpon>
+    </None>
+    <None Include="dsBlacklist.xsc">
+      <DependentUpon>dsBlacklist.xsd</DependentUpon>
+    </None>
+    <None Include="dsBlacklist.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBlacklist.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBlacklist.xss">
+      <DependentUpon>dsBlacklist.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAEntry.xsc">
+      <DependentUpon>dsDMAEntry.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDMAEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDMAEntry.xss">
+      <DependentUpon>dsDMAEntry.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAList.xsc">
+      <DependentUpon>dsDMAList.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDMAList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDMAList.xss">
+      <DependentUpon>dsDMAList.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAPattern.xsc">
+      <DependentUpon>dsDMAPattern.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAPattern.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDMAPattern.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsDMAPattern.xss">
+      <DependentUpon>dsDMAPattern.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAResult.xsc">
+      <DependentUpon>dsDMAResult.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMAResult.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDMAResult.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsDMAResult.xss">
+      <DependentUpon>dsDMAResult.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMTR.xsc">
+      <DependentUpon>dsDMTR.xsd</DependentUpon>
+    </None>
+    <None Include="dsDMTR.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDMTR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDMTR.xss">
+      <DependentUpon>dsDMTR.xsd</DependentUpon>
+    </None>
+    <None Include="dsDormantMonitor.xsc">
+      <DependentUpon>dsDormantMonitor.xsd</DependentUpon>
+    </None>
+    <None Include="dsDormantMonitor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDormantMonitor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDormantMonitor.xss">
+      <DependentUpon>dsDormantMonitor.xsd</DependentUpon>
+    </None>
+    <None Include="dsLedger.xsc">
+      <DependentUpon>dsLedger.xsd</DependentUpon>
+    </None>
+    <None Include="dsLedger.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLedger.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLedger.xss">
+      <DependentUpon>dsLedger.xsd</DependentUpon>
+    </None>
+    <None Include="dsManualBill.xsc">
+      <DependentUpon>dsManualBill.xsd</DependentUpon>
+    </None>
+    <None Include="dsManualBill.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsManualBill.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsManualBill.xss">
+      <DependentUpon>dsManualBill.xsd</DependentUpon>
+    </None>
+    <None Include="dsMaster.xsc">
+      <DependentUpon>dsMaster.xsd</DependentUpon>
+    </None>
+    <None Include="dsMaster.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMaster.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMaster.xss">
+      <DependentUpon>dsMaster.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterAccts.xsc">
+      <DependentUpon>dsMasterAccts.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterAccts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMasterAccts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMasterAccts.xss">
+      <DependentUpon>dsMasterAccts.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterAging.xsc">
+      <DependentUpon>dsMasterAging.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterAging.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMasterAging.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMasterAging.xss">
+      <DependentUpon>dsMasterAging.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterDetails.xsc">
+      <DependentUpon>dsMasterDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMasterDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMasterDetails.xss">
+      <DependentUpon>dsMasterDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterQuery.xsc">
+      <DependentUpon>dsMasterQuery.xsd</DependentUpon>
+    </None>
+    <None Include="dsMasterQuery.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMasterQuery.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMasterQuery.xss">
+      <DependentUpon>dsMasterQuery.xsd</DependentUpon>
+    </None>
+    <None Include="dsMeters.xsc">
+      <DependentUpon>dsMeters.xsd</DependentUpon>
+    </None>
+    <None Include="dsMeters.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMeters.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMeters.xss">
+      <DependentUpon>dsMeters.xsd</DependentUpon>
+    </None>
+    <None Include="dsMRSDownload.xsc">
+      <DependentUpon>dsMRSDownload.xsd</DependentUpon>
+    </None>
+    <None Include="dsMRSDownload.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMRSDownload.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMRSDownload.xss">
+      <DependentUpon>dsMRSDownload.xsd</DependentUpon>
+    </None>
+    <None Include="dsMRSDownUpload.xsc">
+      <DependentUpon>dsMRSDownUpload.xsd</DependentUpon>
+    </None>
+    <None Include="dsMRSDownUpload.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMRSDownUpload.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMRSDownUpload.xss">
+      <DependentUpon>dsMRSDownUpload.xsd</DependentUpon>
+    </None>
+    <None Include="dsMRSUploadView.xsc">
+      <DependentUpon>dsMRSUploadView.xsd</DependentUpon>
+    </None>
+    <None Include="dsMRSUploadView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMRSUploadView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMRSUploadView.xss">
+      <DependentUpon>dsMRSUploadView.xsd</DependentUpon>
+    </None>
+    <None Include="dsPenaltyHistory.xsc">
+      <DependentUpon>dsPenaltyHistory.xsd</DependentUpon>
+    </None>
+    <None Include="dsPenaltyHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPenaltyHistory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsPenaltyHistory.xss">
+      <DependentUpon>dsPenaltyHistory.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrepareAcct.xsc">
+      <DependentUpon>dsPrepareAcct.xsd</DependentUpon>
+    </None>
+    <None Include="dsPrepareAcct.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrepareAcct.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsPrepareAcct.xss">
+      <DependentUpon>dsPrepareAcct.xsd</DependentUpon>
+    </None>
+    <None Include="dsRaffleEntries.xsc">
+      <DependentUpon>dsRaffleEntries.xsd</DependentUpon>
+    </None>
+    <None Include="dsRaffleEntries.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRaffleEntries.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRaffleEntries.xss">
+      <DependentUpon>dsRaffleEntries.xsd</DependentUpon>
+    </None>
+    <None Include="dsRecapSales.xsc">
+      <DependentUpon>dsRecapSales.xsd</DependentUpon>
+    </None>
+    <None Include="dsRecapSales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRecapSales.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRecapSales.xss">
+      <DependentUpon>dsRecapSales.xsd</DependentUpon>
+    </None>
+    <None Include="dsServiceRequest.xsc">
+      <DependentUpon>dsServiceRequest.xsd</DependentUpon>
+    </None>
+    <None Include="dsServiceRequest.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsServiceRequest.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsServiceRequest.xss">
+      <DependentUpon>dsServiceRequest.xsd</DependentUpon>
+    </None>
+    <None Include="dsServiceRequestCodes.xsc">
+      <DependentUpon>dsServiceRequestCodes.xsd</DependentUpon>
+    </None>
+    <None Include="dsServiceRequestCodes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsServiceRequestCodes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsServiceRequestCodes.xss">
+      <DependentUpon>dsServiceRequestCodes.xsd</DependentUpon>
+    </None>
+    <None Include="dsUploadHistory.xsc">
+      <DependentUpon>dsUploadHistory.xsd</DependentUpon>
+    </None>
+    <None Include="dsUploadHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUploadHistory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsUploadHistory.xss">
+      <DependentUpon>dsUploadHistory.xsd</DependentUpon>
+    </None>
+    <None Include="dsZone.xsc">
+      <DependentUpon>dsZone.xsd</DependentUpon>
+    </None>
+    <None Include="dsZone.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsZone.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsZone.xss">
+      <DependentUpon>dsZone.xsd</DependentUpon>
+    </None>
+    <None Include="dsZoneLookup.xsc">
+      <DependentUpon>dsZoneLookup.xsd</DependentUpon>
+    </None>
+    <None Include="dsZoneLookup.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsZoneLookup.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsZoneLookup.xss">
+      <DependentUpon>dsZoneLookup.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="dbCommercial.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbCommercial.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model3.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model3.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model5.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model5.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model6.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model6.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Properties\DataSources\dbCommercialEntities.datasource" />
+    <None Include="Properties\DataSources\dbCommercialEntitiesLIVE.datasource" />
+    <None Include="Properties\DataSources\dbRaffleEntities1.datasource" />
+    <None Include="Properties\DataSources\dbRezoneEntities.datasource" />
+    <None Include="Properties\DataSources\tbBilling.datasource" />
+    <None Include="Properties\DataSources\tbBillingDetail.datasource" />
+    <None Include="Properties\DataSources\tbBillingSchedule.datasource" />
+    <None Include="Properties\DataSources\tbBillProcessing.datasource" />
+    <None Include="Properties\DataSources\tbMeterReader.datasource" />
+    <None Include="Properties\DataSources\tbMRSDownloadHistory.datasource" />
+    <None Include="Properties\DataSources\tbZone.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="templates\BILL0000.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\blankNC3.DBF" />
+    <None Include="templates\DPAY0000.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture 001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="External\" />
+    <Folder Include="Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbCommercial.edmx.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

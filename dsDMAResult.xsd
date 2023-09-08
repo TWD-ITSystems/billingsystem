@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDMAResult" targetNamespace="http://tempuri.org/dsDMAResult.xsd" xmlns:mstns="http://tempuri.org/dsDMAResult.xsd" xmlns="http://tempuri.org/dsDMAResult.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDMAResult" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDMAResult" msprop:Generator_UserDSName="dsDMAResult">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbDMAResult" msprop:Generator_TableClassName="tbDMAResultDataTable" msprop:Generator_TableVarName="tabletbDMAResult" msprop:Generator_TablePropName="tbDMAResult" msprop:Generator_RowDeletingName="tbDMAResultRowDeleting" msprop:Generator_UserTableName="tbDMAResult" msprop:Generator_RowChangingName="tbDMAResultRowChanging" msprop:Generator_RowEvHandlerName="tbDMAResultRowChangeEventHandler" msprop:Generator_RowDeletedName="tbDMAResultRowDeleted" msprop:Generator_RowEvArgName="tbDMAResultRowChangeEvent" msprop:Generator_RowChangedName="tbDMAResultRowChanged" msprop:Generator_RowClassName="tbDMAResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dma" msprop:Generator_ColumnVarNameInTable="columndma" msprop:Generator_ColumnPropNameInRow="dma" msprop:Generator_ColumnPropNameInTable="dmaColumn" msprop:Generator_UserColumnName="dma" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="noSC" msprop:Generator_ColumnVarNameInTable="columnnoSC" msprop:Generator_ColumnPropNameInRow="noSC" msprop:Generator_ColumnPropNameInTable="noSCColumn" msprop:Generator_UserColumnName="noSC" type="xs:int" minOccurs="0" />
+              <xs:element name="totalVol" msprop:Generator_ColumnVarNameInTable="columntotalVol" msprop:Generator_ColumnPropNameInRow="totalVol" msprop:Generator_ColumnPropNameInTable="totalVolColumn" msprop:Generator_UserColumnName="totalVol" type="xs:int" minOccurs="0" />
+              <xs:element name="dateRead" msprop:Generator_ColumnVarNameInTable="columndateRead" msprop:Generator_ColumnPropNameInRow="dateRead" msprop:Generator_ColumnPropNameInTable="dateReadColumn" msprop:Generator_UserColumnName="dateRead" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

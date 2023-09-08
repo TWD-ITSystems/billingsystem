@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dbCommercialModelLive.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dbCommercialModelLiveStoreContainer">
+          <EntitySet Name="tbDormantMonitoring" EntityType="dbCommercialModelLive.Store.tbDormantMonitoring" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="tbDormantMonitoring">
+          <Key>
+            <PropertyRef Name="dormant_id" />
+          </Key>
+          <Property Name="dormant_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="address" Type="varchar" MaxLength="100" />
+          <Property Name="cardno" Type="int" />
+          <Property Name="zone" Type="varchar" MaxLength="6" />
+          <Property Name="category" Type="int" />
+          <Property Name="date_disconnected" Type="datetime2" />
+          <Property Name="arrears" Type="decimal" Scale="2" />
+          <Property Name="amount_paid" Type="decimal" Scale="2" />
+          <Property Name="date_paid" Type="datetime" />
+          <Property Name="paid_count" Type="int" />
+          <Property Name="current_status" Type="varchar" MaxLength="6" />
+          <Property Name="date_generated" Type="datetime" />
+          <Property Name="baseline_data" Type="varchar" MaxLength="8" />
+          <Property Name="masterID" Type="int" />
+          <Property Name="acctno" Type="varchar" MaxLength="8" />
+          <Property Name="balance" Type="decimal" Scale="2" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbCommercialModelLive" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="dbCommercialEntitiesLIVE" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbDormantMonitorings" EntityType="dbCommercialModelLive.tbDormantMonitoring" />
+        </EntityContainer>
+        <EntityType Name="tbDormantMonitoring">
+          <Key>
+            <PropertyRef Name="dormant_id" />
+          </Key>
+          <Property Type="Int32" Name="dormant_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="address" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="cardno" />
+          <Property Type="String" Name="zone" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="category" />
+          <Property Type="DateTime" Name="date_disconnected" />
+          <Property Type="Decimal" Name="arrears" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="amount_paid" Precision="18" Scale="2" />
+          <Property Type="DateTime" Name="date_paid" />
+          <Property Type="Int32" Name="paid_count" />
+          <Property Type="String" Name="current_status" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="date_generated" />
+          <Property Type="String" Name="baseline_data" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="masterID" />
+          <Property Type="String" Name="acctno" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="balance" Precision="18" Scale="2" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbCommercialModelLiveStoreContainer" CdmEntityContainer="dbCommercialEntitiesLIVE">
+          <EntitySetMapping Name="tbDormantMonitorings">
+            <EntityTypeMapping TypeName="dbCommercialModelLive.tbDormantMonitoring">
+              <MappingFragment StoreEntitySet="tbDormantMonitoring">
+                <ScalarProperty Name="balance" ColumnName="balance" />
+                <ScalarProperty Name="acctno" ColumnName="acctno" />
+                <ScalarProperty Name="masterID" ColumnName="masterID" />
+                <ScalarProperty Name="baseline_data" ColumnName="baseline_data" />
+                <ScalarProperty Name="date_generated" ColumnName="date_generated" />
+                <ScalarProperty Name="current_status" ColumnName="current_status" />
+                <ScalarProperty Name="paid_count" ColumnName="paid_count" />
+                <ScalarProperty Name="date_paid" ColumnName="date_paid" />
+                <ScalarProperty Name="amount_paid" ColumnName="amount_paid" />
+                <ScalarProperty Name="arrears" ColumnName="arrears" />
+                <ScalarProperty Name="date_disconnected" ColumnName="date_disconnected" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="zone" ColumnName="zone" />
+                <ScalarProperty Name="cardno" ColumnName="cardno" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="dormant_id" ColumnName="dormant_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model6">
+        <EntityTypeShape EntityType="dbCommercialModelLive.tbDormantMonitoring" Width="1.5" PointX="0.75" PointY="0.75" Height="4.2879036458333326" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

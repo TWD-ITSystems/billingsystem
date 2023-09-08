@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMRSUploadView" targetNamespace="http://tempuri.org/dsMRSUploadView.xsd" xmlns:mstns="http://tempuri.org/dsMRSUploadView.xsd" xmlns="http://tempuri.org/dsMRSUploadView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbCommercialConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbCommercialConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BillingSystem.Properties.Settings.GlobalReference.Default.dbCommercialConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwMRSUploadTableAdapter" GeneratorDataComponentClassName="vwMRSUploadTableAdapter" Name="vwMRSUpload" UserDataComponentName="vwMRSUploadTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbCommercialConnectionString (Settings)" DbObjectName="dbCommercial.dbo.vwMRSUpload" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT md_name, md_address, md_metno, md_cardno, md_status, md_billmonth, md_billno, md_acctno, md_zone, md_ctgry, md_prevrdg, md_presrdg, md_volume, md_billamount, md_readtime, md_ffcode, md_mccode, md_remark, md_encoder, md_dateuploaded, mrsUP_ID, md_masterID FROM dbo.vwMRSUpload</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="md_name" DataSetColumn="md_name" />
+              <Mapping SourceColumn="md_address" DataSetColumn="md_address" />
+              <Mapping SourceColumn="md_metno" DataSetColumn="md_metno" />
+              <Mapping SourceColumn="md_cardno" DataSetColumn="md_cardno" />
+              <Mapping SourceColumn="md_status" DataSetColumn="md_status" />
+              <Mapping SourceColumn="md_billmonth" DataSetColumn="md_billmonth" />
+              <Mapping SourceColumn="md_billno" DataSetColumn="md_billno" />
+              <Mapping SourceColumn="md_acctno" DataSetColumn="md_acctno" />
+              <Mapping SourceColumn="md_zone" DataSetColumn="md_zone" />
+              <Mapping SourceColumn="md_ctgry" DataSetColumn="md_ctgry" />
+              <Mapping SourceColumn="md_prevrdg" DataSetColumn="md_prevrdg" />
+              <Mapping SourceColumn="md_presrdg" DataSetColumn="md_presrdg" />
+              <Mapping SourceColumn="md_volume" DataSetColumn="md_volume" />
+              <Mapping SourceColumn="md_billamount" DataSetColumn="md_billamount" />
+              <Mapping SourceColumn="md_readtime" DataSetColumn="md_readtime" />
+              <Mapping SourceColumn="md_ffcode" DataSetColumn="md_ffcode" />
+              <Mapping SourceColumn="md_mccode" DataSetColumn="md_mccode" />
+              <Mapping SourceColumn="md_remark" DataSetColumn="md_remark" />
+              <Mapping SourceColumn="md_encoder" DataSetColumn="md_encoder" />
+              <Mapping SourceColumn="md_dateuploaded" DataSetColumn="md_dateuploaded" />
+              <Mapping SourceColumn="mrsUP_ID" DataSetColumn="mrsUP_ID" />
+              <Mapping SourceColumn="md_masterID" DataSetColumn="md_masterID" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="dbCommercialConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByZone" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByZone" GeneratorSourceName="FillByZone" GetMethodModifier="Public" GetMethodName="GetDataByZone" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByZone" UserSourceName="FillByZone">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     tbMrsDownload.md_name, tbMrsDownload.md_address, tbMrsDownload.md_metno, tbMrsDownload.md_cardno, tbMrsDownload.md_status, 
+                      tbMrsUpload.md_billmonth, tbMrsUpload.md_billno, tbMrsDownload.md_acctno, tbMrsDownload.md_zone, tbMrsDownload.md_ctgry, 
+                      tbMrsDownload.md_prevrdg, tbMrsDownload.md_presrdg, tbMrsDownload.md_volume, tbMrsUpload.md_billamount, tbMrsUpload.md_readtime, 
+                      tbMrsUpload.md_ffcode, tbMrsUpload.md_mccode, tbMrsDownload.md_remark, tbMrsUpload.md_encoder, tbMrsUpload.md_dateuploaded, 
+                      tbMrsUpload.mrsUP_ID, tbMrsDownload.md_masterID
+FROM         tbMrsDownload LEFT OUTER JOIN
+                      tbMrsUpload ON tbMrsDownload.md_acctno = tbMrsUpload.md_acctno AND tbMrsUpload.md_billmonth = @Param2
+WHERE     (tbMrsDownload.md_zone = @Param1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="md_billmonth" DataSourceName="dbCommercial.dbo.tbMrsUpload" DataTypeServer="varchar(10)" DbType="AnsiString" Direction="Input" ParameterName="@Param2" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumn="md_billmonth" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="md_zone" DataSourceName="dbCommercial.dbo.tbMrsDownload" DataTypeServer="char(10)" DbType="AnsiString" Direction="Input" ParameterName="@Param1" Precision="0" ProviderType="Char" Scale="0" Size="10" SourceColumn="md_zone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMRSUploadView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsMRSUploadView" msprop:Generator_UserDSName="dsMRSUploadView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwMRSUpload" msprop:Generator_TableClassName="vwMRSUploadDataTable" msprop:Generator_TableVarName="tablevwMRSUpload" msprop:Generator_TablePropName="vwMRSUpload" msprop:Generator_RowDeletingName="vwMRSUploadRowDeleting" msprop:Generator_UserTableName="vwMRSUpload" msprop:Generator_RowChangingName="vwMRSUploadRowChanging" msprop:Generator_RowEvHandlerName="vwMRSUploadRowChangeEventHandler" msprop:Generator_RowDeletedName="vwMRSUploadRowDeleted" msprop:Generator_RowEvArgName="vwMRSUploadRowChangeEvent" msprop:Generator_RowChangedName="vwMRSUploadRowChanged" msprop:Generator_RowClassName="vwMRSUploadRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="md_name" msprop:Generator_ColumnVarNameInTable="columnmd_name" msprop:Generator_ColumnPropNameInRow="md_name" msprop:Generator_ColumnPropNameInTable="md_nameColumn" msprop:Generator_UserColumnName="md_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_address" msprop:Generator_ColumnVarNameInTable="columnmd_address" msprop:Generator_ColumnPropNameInRow="md_address" msprop:Generator_ColumnPropNameInTable="md_addressColumn" msprop:Generator_UserColumnName="md_address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_metno" msprop:Generator_ColumnVarNameInTable="columnmd_metno" msprop:Generator_ColumnPropNameInRow="md_metno" msprop:Generator_ColumnPropNameInTable="md_metnoColumn" msprop:Generator_UserColumnName="md_metno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_cardno" msprop:Generator_ColumnVarNameInTable="columnmd_cardno" msprop:Generator_ColumnPropNameInRow="md_cardno" msprop:Generator_ColumnPropNameInTable="md_cardnoColumn" msprop:Generator_UserColumnName="md_cardno" type="xs:int" minOccurs="0" />
+              <xs:element name="md_status" msprop:Generator_ColumnVarNameInTable="columnmd_status" msprop:Generator_ColumnPropNameInRow="md_status" msprop:Generator_ColumnPropNameInTable="md_statusColumn" msprop:Generator_UserColumnName="md_status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_billmonth" msprop:Generator_ColumnVarNameInTable="columnmd_billmonth" msprop:Generator_ColumnPropNameInRow="md_billmonth" msprop:Generator_ColumnPropNameInTable="md_billmonthColumn" msprop:Generator_UserColumnName="md_billmonth" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_billno" msprop:Generator_ColumnVarNameInTable="columnmd_billno" msprop:Generator_ColumnPropNameInRow="md_billno" msprop:Generator_ColumnPropNameInTable="md_billnoColumn" msprop:Generator_UserColumnName="md_billno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_acctno" msprop:Generator_ColumnVarNameInTable="columnmd_acctno" msprop:Generator_ColumnPropNameInRow="md_acctno" msprop:Generator_ColumnPropNameInTable="md_acctnoColumn" msprop:Generator_UserColumnName="md_acctno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_zone" msprop:Generator_ColumnVarNameInTable="columnmd_zone" msprop:Generator_ColumnPropNameInRow="md_zone" msprop:Generator_ColumnPropNameInTable="md_zoneColumn" msprop:Generator_UserColumnName="md_zone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_ctgry" msprop:Generator_ColumnVarNameInTable="columnmd_ctgry" msprop:Generator_ColumnPropNameInRow="md_ctgry" msprop:Generator_ColumnPropNameInTable="md_ctgryColumn" msprop:Generator_UserColumnName="md_ctgry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_prevrdg" msprop:Generator_ColumnVarNameInTable="columnmd_prevrdg" msprop:Generator_ColumnPropNameInRow="md_prevrdg" msprop:Generator_ColumnPropNameInTable="md_prevrdgColumn" msprop:Generator_UserColumnName="md_prevrdg" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_presrdg" msprop:Generator_ColumnVarNameInTable="columnmd_presrdg" msprop:Generator_ColumnPropNameInRow="md_presrdg" msprop:Generator_ColumnPropNameInTable="md_presrdgColumn" msprop:Generator_UserColumnName="md_presrdg" type="xs:int" minOccurs="0" />
+              <xs:element name="md_volume" msprop:Generator_ColumnVarNameInTable="columnmd_volume" msprop:Generator_ColumnPropNameInRow="md_volume" msprop:Generator_ColumnPropNameInTable="md_volumeColumn" msprop:Generator_UserColumnName="md_volume" type="xs:int" minOccurs="0" />
+              <xs:element name="md_billamount" msprop:Generator_ColumnVarNameInTable="columnmd_billamount" msprop:Generator_ColumnPropNameInRow="md_billamount" msprop:Generator_ColumnPropNameInTable="md_billamountColumn" msprop:Generator_UserColumnName="md_billamount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="md_readtime" msprop:Generator_ColumnVarNameInTable="columnmd_readtime" msprop:Generator_ColumnPropNameInRow="md_readtime" msprop:Generator_ColumnPropNameInTable="md_readtimeColumn" msprop:Generator_UserColumnName="md_readtime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_ffcode" msprop:Generator_ColumnVarNameInTable="columnmd_ffcode" msprop:Generator_ColumnPropNameInRow="md_ffcode" msprop:Generator_ColumnPropNameInTable="md_ffcodeColumn" msprop:Generator_UserColumnName="md_ffcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_mccode" msprop:Generator_ColumnVarNameInTable="columnmd_mccode" msprop:Generator_ColumnPropNameInRow="md_mccode" msprop:Generator_ColumnPropNameInTable="md_mccodeColumn" msprop:Generator_UserColumnName="md_mccode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_remark" msprop:Generator_ColumnVarNameInTable="columnmd_remark" msprop:Generator_ColumnPropNameInRow="md_remark" msprop:Generator_ColumnPropNameInTable="md_remarkColumn" msprop:Generator_UserColumnName="md_remark" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_encoder" msprop:Generator_ColumnVarNameInTable="columnmd_encoder" msprop:Generator_ColumnPropNameInRow="md_encoder" msprop:Generator_ColumnPropNameInTable="md_encoderColumn" msprop:Generator_UserColumnName="md_encoder" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="md_dateuploaded" msprop:Generator_ColumnVarNameInTable="columnmd_dateuploaded" msprop:Generator_ColumnPropNameInRow="md_dateuploaded" msprop:Generator_ColumnPropNameInTable="md_dateuploadedColumn" msprop:Generator_UserColumnName="md_dateuploaded" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mrsUP_ID" msprop:Generator_ColumnVarNameInTable="columnmrsUP_ID" msprop:Generator_ColumnPropNameInRow="mrsUP_ID" msprop:Generator_ColumnPropNameInTable="mrsUP_IDColumn" msprop:Generator_UserColumnName="mrsUP_ID" type="xs:int" />
+              <xs:element name="md_masterID" msprop:Generator_ColumnVarNameInTable="columnmd_masterID" msprop:Generator_ColumnPropNameInRow="md_masterID" msprop:Generator_ColumnPropNameInTable="md_masterIDColumn" msprop:Generator_UserColumnName="md_masterID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vwMRSUpload" />
+      <xs:field xpath="mstns:mrsUP_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

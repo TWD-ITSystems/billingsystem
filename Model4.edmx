@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dbRaffleModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dbRaffleModelStoreContainer">
+          <EntitySet Name="tbRaffeEntries" EntityType="dbRaffleModel.Store.tbRaffeEntries" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbRafflePeriod" EntityType="dbRaffleModel.Store.tbRafflePeriod" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="tbRaffeEntries">
+          <Key>
+            <PropertyRef Name="entry_id" />
+          </Key>
+          <Property Name="entry_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="raffle_id" Type="int" />
+          <Property Name="acctno" Type="nvarchar" MaxLength="6" />
+          <Property Name="acctname" Type="nvarchar" MaxLength="50" />
+          <Property Name="added_date" Type="date" />
+          <Property Name="added_by" Type="nvarchar" MaxLength="30" />
+          <Property Name="master_id" Type="int" />
+          <Property Name="remarks" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbRafflePeriod">
+          <Key>
+            <PropertyRef Name="raffle_id" />
+          </Key>
+          <Property Name="raffle_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="raffle_description" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="raffle_period" Type="nvarchar" MaxLength="50" />
+          <Property Name="remarks" Type="nvarchar" MaxLength="200" />
+          <Property Name="added_date" Type="date" />
+          <Property Name="added_by" Type="nvarchar" MaxLength="50" />
+          <Property Name="draw_date" Type="date" />
+          <Property Name="qualified_entries" Type="int" />
+          <Property Name="generated_date" Type="date" />
+          <Property Name="cutoff_date" Type="date" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbRaffleModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="dbRaffleEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbRaffeEntries" EntityType="dbRaffleModel.tbRaffeEntry" />
+          <EntitySet Name="tbRafflePeriods" EntityType="dbRaffleModel.tbRafflePeriod" />
+        </EntityContainer>
+        <EntityType Name="tbRaffeEntry">
+          <Key>
+            <PropertyRef Name="entry_id" />
+          </Key>
+          <Property Name="entry_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="raffle_id" Type="Int32" />
+          <Property Name="acctno" Type="String" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="acctname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="added_date" Type="DateTime" />
+          <Property Name="added_by" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="master_id" Type="Int32" />
+          <Property Name="remarks" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbRafflePeriod">
+          <Key>
+            <PropertyRef Name="raffle_id" />
+          </Key>
+          <Property Name="raffle_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="raffle_description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="raffle_period" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="remarks" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="added_date" Type="DateTime" />
+          <Property Name="added_by" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="draw_date" Type="DateTime" />
+          <Property Name="qualified_entries" Type="Int32" />
+          <Property Type="DateTime" Name="generated_date" />
+          <Property Type="DateTime" Name="cutoff_date" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbRaffleModelStoreContainer" CdmEntityContainer="dbRaffleEntities">
+          <EntitySetMapping Name="tbRaffeEntries">
+            <EntityTypeMapping TypeName="dbRaffleModel.tbRaffeEntry">
+              <MappingFragment StoreEntitySet="tbRaffeEntries">
+                <ScalarProperty Name="entry_id" ColumnName="entry_id" />
+                <ScalarProperty Name="raffle_id" ColumnName="raffle_id" />
+                <ScalarProperty Name="acctno" ColumnName="acctno" />
+                <ScalarProperty Name="acctname" ColumnName="acctname" />
+                <ScalarProperty Name="added_date" ColumnName="added_date" />
+                <ScalarProperty Name="added_by" ColumnName="added_by" />
+                <ScalarProperty Name="master_id" ColumnName="master_id" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbRafflePeriods">
+            <EntityTypeMapping TypeName="dbRaffleModel.tbRafflePeriod">
+              <MappingFragment StoreEntitySet="tbRafflePeriod">
+                <ScalarProperty Name="cutoff_date" ColumnName="cutoff_date" />
+                <ScalarProperty Name="generated_date" ColumnName="generated_date" />
+                <ScalarProperty Name="raffle_id" ColumnName="raffle_id" />
+                <ScalarProperty Name="raffle_description" ColumnName="raffle_description" />
+                <ScalarProperty Name="raffle_period" ColumnName="raffle_period" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="added_date" ColumnName="added_date" />
+                <ScalarProperty Name="added_by" ColumnName="added_by" />
+                <ScalarProperty Name="draw_date" ColumnName="draw_date" />
+                <ScalarProperty Name="qualified_entries" ColumnName="qualified_entries" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model4">
+        <EntityTypeShape EntityType="dbRaffleModel.tbRaffeEntry" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbRaffleModel.tbRafflePeriod" Width="1.5" PointX="2.75" PointY="0.75" Height="2.5571907552083326" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
